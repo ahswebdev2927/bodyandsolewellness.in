@@ -82,7 +82,7 @@ export default function AboutPage() {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Our Heritage</span>
           </motion.div>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export default function AboutPage() {
           >
             Sanctuary of <span className="italic text-gradient-gold">Divine Presence</span>
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export default function AboutPage() {
       </section>
 
       {/* 2. Mission & Vision */}
-      <section className="py-16 sm:py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-16 px-6 relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -147,14 +147,14 @@ export default function AboutPage() {
       </section>
 
       {/* 3. Historical Timeline */}
-      <section className="py-16 sm:py-24 px-6 bg-neutral-50/10 dark:bg-neutral-950/10 relative z-10">
+      <section className="py-16 sm:py-16 px-6 bg-neutral-50/10 dark:bg-neutral-950/10 relative z-10">
         <div className="max-w-5xl mx-auto">
           <SectionHeading
             badge="The Timeline"
             title="Our History & Growth"
             subtitle="Follow the step-by-step evolution of Wellness & Peace from a small local healing room to a multi-modality sanctuary."
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
             {milestones.map((mile, idx) => (
               <motion.div
@@ -184,7 +184,7 @@ export default function AboutPage() {
       </section>
 
       {/* 4. Practitioner Section */}
-      <section className="py-16 sm:py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-16 px-6 relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left Graphic Artwork placeholder */}
           <motion.div
@@ -222,7 +222,7 @@ export default function AboutPage() {
             <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans">
               Every session integrates my intuitive training with high-vibrational alignments to release core blockages and elevate your bodily frequency. I look forward to walking this path of transformation together.
             </p>
-            
+
             {/* Achievements bullets */}
             <div className="mt-4 flex flex-col gap-3">
               <h4 className="font-serif text-lg tracking-wide text-foreground flex items-center gap-2">
@@ -242,14 +242,14 @@ export default function AboutPage() {
       </section>
 
       {/* 5. Core Values */}
-      <section className="py-16 sm:py-24 px-6 bg-neutral-50/10 dark:bg-neutral-950/10 relative z-10">
+      <section className="py-16 sm:py-16 px-6 bg-neutral-50/10 dark:bg-neutral-950/10 relative z-10">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badge="Alignment"
             title="Core Values We Hold"
             subtitle="These foundational principles guide our therapists, energy alignments, client intake, and remote structures."
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((val, idx) => {
               const IconComponent = val.icon;
@@ -280,14 +280,14 @@ export default function AboutPage() {
       </section>
 
       {/* 6. Image Gallery */}
-      <section className="py-16 sm:py-24 px-6 relative z-10">
+      <section className="py-16 sm:py-16 px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badge="The Space"
             title="Sanctuary Visual Diary"
             subtitle="Look inside our tranquil physical therapy chambers and meditative spaces designed for deep cellular healing."
           />
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
             {galleryGradients.map((grad, idx) => (
               <motion.div
@@ -309,7 +309,7 @@ export default function AboutPage() {
       </section>
 
       {/* 7. CTA */}
-      <section className="py-16 sm:py-24 px-6 relative z-10 text-center">
+      <section className="py-16 sm:py-16 px-6 relative z-10 text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-foreground tracking-wide">
             Ready to Begin Your <span className="italic text-gradient-gold">Alignment?</span>
