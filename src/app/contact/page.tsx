@@ -3,7 +3,7 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Sparkles, MapPin, Mail, Phone, Clock, Send, HelpCircle } from "lucide-react";
+import { Sparkles, Mail, Phone, Clock, Send, HelpCircle } from "lucide-react";
 import { PageWrapper } from "@/components/layout/page-wrapper";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
@@ -165,6 +165,11 @@ function ContactForm() {
         />
       </div>
 
+      <div className="text-xs text-neutral-500 dark:text-neutral-400 bg-neutral-500/[0.03] dark:bg-white/[0.02] border border-neutral-200/40 dark:border-neutral-800/40 p-4 rounded-2xl flex flex-col gap-1.5 font-sans leading-relaxed">
+        <span className="font-semibold text-gold-600 dark:text-gold-400 font-serif text-sm">Distance Healing Notice</span>
+        <span>All sessions are conducted via distance healing. Once your booking request is received, we will reach out to request a recent photograph (your image), full name, and birth date to establish the visual and energetic connection.</span>
+      </div>
+
       <Button
         type="submit"
         variant="primary"
@@ -181,7 +186,6 @@ function ContactForm() {
 
 export default function ContactPage() {
   const contactDetails = [
-    { icon: MapPin, label: "Sanctuary Address", value: "128 Healing Sanctuary Lane, Aura Suite, Cosmic Springs" },
     { icon: Mail, label: "Email Correspondence", value: "contact@wellnessandpeace.com" },
     { icon: Phone, label: "Phone Contact", value: "+1 (555) 777-8888" },
   ];
@@ -223,7 +227,7 @@ export default function ContactPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-neutral-500 dark:text-neutral-400 text-base sm:text-lg max-w-2xl font-light leading-relaxed"
           >
-            Reach out to schedule in-person care or distance energy alignment. We look forward to facilitating your transformation.
+            All our energy healing services are conducted via distance healing. Select your modality, and we will establish connection using your photograph. We look forward to facilitating your transformation.
           </motion.p>
         </div>
       </section>
@@ -246,7 +250,7 @@ export default function ContactPage() {
               </span>
               <div className="flex flex-col gap-2">
                 <h3 className="font-serif text-xl tracking-wide text-foreground font-semibold">
-                  Contact Page Notice
+                  Clarity Call
                 </h3>
                 <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans max-w-3xl">
                   If you have any questions or need clarification about any of our services, you can contact us for a one-on-one session.

@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Wellness & Peace | Premium Cosmic Wellness & Reiki Healing",
   description: "Experience professional Reiki healing, Twin Flame healing, and spiritual transformation at Wellness & Peace. A sanctuary of peace, balance, and luxury holistic therapy.",
-  keywords: ["Reiki Healing", "Karmic Reiki", "Twin Flame Healing", "Violet Flame Healing", "Distance Healing", "Cosmic Wellness", "Spiritual Healing", "Luxury Spa"],
+  keywords: ["Reiki Healing", "Karmic Reiki", "Twin Flame Healing", "Violet Flame Healing", "Distance Healing", "Cosmic Wellness", "Spiritual Healing", "Luxury Spa", "Soul Contract Translation", "Ancestral Healing", "Money Reiki Healing"],
   authors: [{ name: "Wellness & Peace" }],
   openGraph: {
     title: "Wellness & Peace | Premium Cosmic Wellness & Reiki Healing",

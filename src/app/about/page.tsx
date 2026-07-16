@@ -42,7 +42,7 @@ export default function AboutPage() {
     {
       year: "2022",
       title: "Global Distance Net",
-      desc: "Created our quantum remote network, offering high-potency healing services to clients worldwide."
+      desc: "Created our quantum distance healing network, offering high-potency healing services to clients worldwide."
     },
     {
       year: "2026",
@@ -55,7 +55,7 @@ export default function AboutPage() {
     "Certified Usui Reiki Grand Master Practitioner",
     "Certified Karuna Reiki Master & Aura Alignment Specialist",
     "Humkara with Haleem Certified Toning Teacher",
-    "Over 12 Years of Clinical Healing Experience",
+    "Over 20 Years of Clinical Healing Experience",
     "Trusted by 5,000+ Clients Worldwide"
   ];
 
@@ -217,7 +217,7 @@ export default function AboutPage() {
               <span className="italic text-gradient-gold">Reiki Grand Master</span>
             </h2>
             <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans">
-              Welcome, I am the lead facilitator at Wellness & Peace. Over the past 12 years, I have dedicated myself to mastering Usui Reiki, Karuna Reiki, and various sonic-vibration alignments. My path is centered on holding an immaculate space where you can release static attachments and realign with your divine flow.
+              Welcome, I am the lead facilitator at Wellness & Peace. Over the past 20 years, I have dedicated myself to mastering Usui Reiki, Karuna Reiki, and various sonic-vibration alignments. My path is centered on holding an immaculate space where you can release static attachments and realign with your divine flow.
             </p>
             <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans">
               Every session integrates my intuitive training with high-vibrational alignments to release core blockages and elevate your bodily frequency. I look forward to walking this path of transformation together.
@@ -247,7 +247,7 @@ export default function AboutPage() {
           <SectionHeading
             badge="Alignment"
             title="Core Values We Hold"
-            subtitle="These foundational principles guide our therapists, energy alignments, client intake, and remote structures."
+            subtitle="These foundational principles guide our therapists, energy alignments, client intake, and distance healing structures."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -280,7 +280,7 @@ export default function AboutPage() {
       </section>
 
       {/* 6. Image Gallery */}
-      <section className="py-16 sm:py-16 px-6 relative z-10">
+      {/* <section className="py-16 sm:py-16 px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badge="The Space"
@@ -298,7 +298,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.5, delay: idx * 0.05 }}
                 className="relative aspect-[4/5] rounded-[24px] overflow-hidden border border-neutral-200/50 dark:border-neutral-800/40 glass shadow-md"
               >
-                {/* Visual placeholder */}
+               
                 <div className={`absolute inset-0 bg-gradient-to-tr ${grad} flex items-center justify-center p-4`}>
                   <Sparkles className="w-8 h-8 text-neutral-400/35" />
                 </div>
@@ -306,7 +306,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 7. CTA */}
       <section className="py-16 sm:py-16 px-6 relative z-10 text-center">

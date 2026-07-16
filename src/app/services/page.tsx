@@ -56,8 +56,68 @@ export default function ServicesPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mt-6 text-neutral-500 dark:text-neutral-400 text-base sm:text-lg max-w-2xl font-light leading-relaxed"
           >
-            Explore our professional energy healing modalities. We combine traditional Usui methods with advanced multi-dimensional cosmic frequencies to balance your biological grids.
+            Explore our professional energy healing modalities. All our services are conducted via distance healing using the client's photograph, allowing you to receive high-frequency alignments from anywhere in the world.
           </motion.p>
+        </div>
+      </section>
+
+      {/* Distance Healing Method Explanation */}
+      <section className="pb-16 px-6 relative z-10">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative rounded-[32px] border border-gold-500/20 bg-gradient-to-br from-gold-500/5 to-purple-500/5 p-8 md:p-12 overflow-hidden glass shadow-2xl"
+          >
+            {/* Ambient gradients */}
+            <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-gold-400/5 blur-[80px] pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-purple-500/5 blur-[80px] pointer-events-none" />
+            
+            <div className="relative z-10 flex flex-col items-center text-center gap-6">
+              <div className="inline-flex items-center justify-center p-4 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400">
+                <Sparkles className="w-8 h-8 animate-pulse" />
+              </div>
+              
+              <h2 className="text-2xl sm:text-3xl font-serif text-foreground tracking-wide">
+                The Sacred Method of <span className="italic text-gradient-gold">Distance Healing</span>
+              </h2>
+              
+              <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed font-light max-w-2xl">
+                In energy healing and quantum fields, physical distance does not exist. All our services are performed via distance healing. We establish a strong energetic link utilizing a <strong>recent photograph (your image)</strong>, full name, and birth date. This photograph acts as a unique energetic anchor, allowing high-frequency alignments to be directed to your aura with exact precision.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-6 text-left">
+                <div className="p-5 rounded-2xl border border-neutral-200/20 bg-neutral-50/50 dark:bg-neutral-900/50">
+                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-sm font-serif">
+                    <span className="w-2 h-2 rounded-full bg-gold-500"></span> 1. Visual Anchor (Photo)
+                  </div>
+                  <p className="text-xs text-neutral-400 leading-relaxed">
+                    A clear photograph allows the practitioner to isolate and connect with your energetic signature during the session.
+                  </p>
+                </div>
+                
+                <div className="p-5 rounded-2xl border border-neutral-200/20 bg-neutral-50/50 dark:bg-neutral-900/50">
+                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-sm font-serif">
+                    <span className="w-2 h-2 rounded-full bg-gold-500"></span> 2. Cozy Receptive Rest
+                  </div>
+                  <p className="text-xs text-neutral-400 leading-relaxed">
+                    At the booked hour, you simply lie down in quiet contemplation from your home while the alignment is being completed.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl border border-neutral-200/20 bg-neutral-50/50 dark:bg-neutral-900/50">
+                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-sm font-serif">
+                    <span className="w-2 h-2 rounded-full bg-gold-500"></span> 3. Energetic Report
+                  </div>
+                  <p className="text-xs text-neutral-400 leading-relaxed">
+                    Following the healing session, you will receive a comprehensive breakdown of the blockages cleared and energy grids restored.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -121,19 +181,19 @@ export default function ServicesPage() {
 
                 {/* Grid stats */}
                 <div className="grid grid-cols-2 gap-4 py-4 border-y border-neutral-200/20 dark:border-neutral-800/20">
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-gold-500 shrink-0" />
+                  <div className="flex items-start gap-2">
+                    <Clock className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
                     <div>
                       <h5 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Duration</h5>
                       <p className="text-sm font-medium text-foreground">{service.duration}</p>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    <User className="w-5 h-5 text-gold-500 shrink-0" />
+                  <div className="flex items-start gap-2">
+                    <User className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
                     <div>
                       <h5 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Ideal For</h5>
-                      <p className="text-sm font-medium text-foreground truncate max-w-[200px]" title={service.whoItIsFor}>
+                      <p className="text-sm font-medium text-foreground" title={service.whoItIsFor}>
                         {service.whoItIsFor}
                       </p>
                     </div>
@@ -151,14 +211,6 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                {/* How It Works */}
-                <div>
-                  <h4 className="font-serif text-base text-foreground font-semibold tracking-wide mb-1.5">How It Works</h4>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                    {service.howItWorks}
-                  </p>
                 </div>
 
                 <div className="mt-4 flex gap-4">

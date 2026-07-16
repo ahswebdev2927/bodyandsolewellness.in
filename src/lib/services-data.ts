@@ -1,4 +1,4 @@
-import { Heart, ShieldAlert, Flame, Sparkles, Zap, Wind, Shield, Sunrise, Activity } from "lucide-react";
+import { Heart, ShieldAlert, Flame, Sparkles, Zap, Wind, Shield, Sunrise, Activity, Scroll, Users, Coins } from "lucide-react";
 
 export interface ServiceDetail {
   id: string;
@@ -27,7 +27,7 @@ export const servicesData: ServiceDetail[] = [
       "Improves sleep quality and immune response"
     ],
     howItWorks: "During a session, you remain fully clothed while lying on a massage table. The practitioner applies soft touch or hovers hands over energy nodes, channeling warmth and rejuvenating light to clear blockages.",
-    duration: "60 / 90 Minutes",
+    duration: "45 Minutes",
     price: "$120 / $165",
     whoItIsFor: "Anyone seeking stress relief, recovery support, mental clarity, or a deep sense of peaceful grounding.",
     icon: Heart,
@@ -45,7 +45,7 @@ export const servicesData: ServiceDetail[] = [
       "Speeds up spiritual growth and clarity regarding life purpose"
     ],
     howItWorks: "Using specialized karmic symbols, the practitioner scans your energy aura to pinpoint karmic anchors, gently vaporizing old emotional debris to free your current path.",
-    duration: "75 Minutes",
+    duration: "6 Weeks",
     price: "$145",
     whoItIsFor: "Those who feel stuck in repeating patterns, self-sabotaging habits, or negative life dynamics that seem beyond logical explanation.",
     icon: ShieldAlert,
@@ -63,7 +63,7 @@ export const servicesData: ServiceDetail[] = [
       "Harmonizes high-vibrational relationship connections"
     ],
     howItWorks: "We work directly with the Heart and Sacral chakras, clearing communication channels and healing emotional triggers to bring balance to your relationships.",
-    duration: "90 Minutes",
+    duration: "45 Minutes",
     price: "$180",
     whoItIsFor: "Individuals going through intense relationship shifts, seeking conscious love, or wanting to unite their own inner polarities.",
     icon: Flame,
@@ -81,7 +81,7 @@ export const servicesData: ServiceDetail[] = [
       "Speeds up recovery from toxic situations or environments"
     ],
     howItWorks: "Through guided visual alignment and energetic channeling, the practitioner wraps your auric field in the transmutational violet spectrum, dissolving blockages at a sub-atomic level.",
-    duration: "60 Minutes",
+    duration: "45 Minutes",
     price: "$130",
     whoItIsFor: "People feeling weighed down by heavy environments, toxic work situations, or chronic negative thoughts.",
     icon: Sparkles,
@@ -117,7 +117,7 @@ export const servicesData: ServiceDetail[] = [
       "Connects the mind to spiritual guides and higher wisdom"
     ],
     howItWorks: "Using advanced sonic chanting, tonings, and sacred symbols, the practitioner directs compassionate light to target specific, deep-seated emotional pain points.",
-    duration: "75 Minutes",
+    duration: "45 Minutes",
     price: "$150",
     whoItIsFor: "Individuals undergoing therapy, deep inner-child healing, or recovering from serious life traumas.",
     icon: Wind,
@@ -135,7 +135,7 @@ export const servicesData: ServiceDetail[] = [
       "Expands awareness to access multi-dimensional guidance"
     ],
     howItWorks: "The session utilizes Merkaba visualizations, holographic geometric grids, and high-frequency channeling to shift your light body into high-alignment.",
-    duration: "90 Minutes",
+    duration: "45 Minutes",
     price: "$190",
     whoItIsFor: "Experienced spiritual seekers looking to expand their consciousness and connect with galactic grids.",
     icon: Shield,
@@ -153,28 +153,64 @@ export const servicesData: ServiceDetail[] = [
       "Creates a powerful protective shield around your body"
     ],
     howItWorks: "The practitioner uses vocal toning, sound frequencies, and dynamic hand mudras to clear out blockages and fill the body with defensive light.",
-    duration: "60 Minutes",
+    duration: "45 Minutes",
     price: "$140",
     whoItIsFor: "People who feel under energetic attack, constantly fatigued, or unable to focus due to energetic overload.",
     icon: Sunrise,
     image: "/devine-imgs/humk.png",
   },
   {
-    id: "distance",
-    name: "Distance Healing",
-    shortDesc: "Quantum energy healing beyond physical distance, providing relief for mind, body, and soul wherever you are.",
-    longDesc: "In energy healing, time and space are non-linear. Distance Healing uses quantum entanglement and intention to direct vital Reiki force to a client anywhere in the world, with the same potency as an in-person session.",
+    id: "soul-contract",
+    name: "Soul Contract Translation",
+    shortDesc: "Translate and decode the energetic blueprint of your soul's primary incarnation contract, revealing your life path agreements, challenges, and destiny templates.",
+    longDesc: "A deep energetic reading and translation of your soul's pre-birth choices and contracts. By decoding your auric field and quantum blueprint, we highlight the specific lessons, karmic challenges, and latent talents your soul agreed to experience in this lifetime, allowing you to align with your highest timeline.",
     benefits: [
-      "Receive treatment from the absolute comfort of your own home",
-      "Identical efficacy and sensory benefits as in-person therapy",
-      "Flexible booking options without travel friction",
-      "Provides rapid energetic support during crises or travels"
+      "Decodes pre-birth agreements and major life lessons",
+      "Reveals the deeper spiritual purpose behind chronic life obstacles",
+      "Unlocks dormant gifts and intuitive abilities",
+      "Provides a clear roadmap for personal and spiritual alignment"
     ],
-    howItWorks: "At the scheduled time, you lie down comfortably. The practitioner calls or connects with you online, conducts the session remotely, and shares an energetic report afterward.",
-    duration: "60 Minutes",
-    price: "$110",
-    whoItIsFor: "Clients worldwide, those with limited mobility, or individuals who prefer the comfort of their own home environment.",
-    icon: Activity,
-    image: "/devine-imgs/dist.png",
+    howItWorks: "Using your photo and full birth details, we tune into your Akashic records and auric templates to translate your contract, delivering a comprehensive alignment summary.",
+    duration: "45 Minutes",
+    price: "$155",
+    whoItIsFor: "Seekers looking for deep clarity on their life purpose, repeating roadblocks, and spiritual destiny.",
+    icon: Scroll,
+    image: "/devine-imgs/soul.png",
+  },
+  {
+    id: "ancestral",
+    name: "Ancestral Healing",
+    shortDesc: "Clear inherited blockages, genetic emotional cycles, and ancestral patterns to release baggage from your family lineage.",
+    longDesc: "Ancestral Healing works directly on the epistructural genetic lineage of your energy field. It identifies and releases unresolved traumatic imprints, vows, and behavioral conditioning inherited from your ancestors, restoring the flowing river of lineage blessings.",
+    benefits: [
+      "Clears inherited emotional burdens and fear patterns",
+      "Releases family lineage vows, curses, and energetic debts",
+      "Restores the flow of wisdom, strength, and ancestral support",
+      "Facilitates healing for future generations in your family line"
+    ],
+    howItWorks: "We establish connection with your ancestral grid using your photograph, clearing dense blockages down seven generations of lineage consciousness.",
+    duration: "45 Minutes",
+    price: "$160",
+    whoItIsFor: "Anyone aware of repeating family traumas, genetic illnesses, or systemic blocks in relationships or wealth.",
+    icon: Users,
+    image: "/devine-imgs/ancestral.png",
+  },
+  {
+    id: "money-reiki",
+    name: "Money Reiki Healing",
+    shortDesc: "Align your personal energetic frequency with the vibration of abundance, clearing scarcity programming and financial blocks.",
+    longDesc: "Money Reiki works specifically with the 'Spiritual Energy of Money' to clear financial karma, scarcity mindset grids, and negative energy surrounding wealth. It realigns your energetic fields to receive, manage, and multiply divine abundance in perfect alignment with your soul path.",
+    benefits: [
+      "Clears deep-seated subconscious scarcity programming",
+      "Transmutes negative energetic blocks surrounding wealth and money",
+      "Aligns your auric field with frequencies of financial opportunity",
+      "Establishes a healthy, high-vibe relationship with abundance"
+    ],
+    howItWorks: "The session focuses heavily on realigning the Solar Plexus, Root, and Crown chakras, dissolving blocks and anchoring abundance frequencies using your photograph.",
+    duration: "45 Minutes",
+    price: "$145",
+    whoItIsFor: "Individuals experiencing financial stress, money blocks, career stagnation, or those wanting to scale their wealth consciousness.",
+    icon: Coins,
+    image: "/devine-imgs/money.png",
   }
 ];

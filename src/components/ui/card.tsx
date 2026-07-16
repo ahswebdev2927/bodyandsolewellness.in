@@ -87,10 +87,7 @@ export function Card({
         />
       )}
       
-      {/* Card Content Wrapper */}
-      <div className="relative z-10 w-full h-full">
-        {children}
-      </div>
+      {children}
     </motion.div>
   );
 }

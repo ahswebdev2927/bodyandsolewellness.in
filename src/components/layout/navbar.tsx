@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useScroll } from "framer-motion";
-import { Menu, X, Sun, Moon, ChevronDown, Sparkles, Heart, Zap, Flame, ShieldAlert, Wind, Sunrise, Shield, Activity } from "lucide-react";
+import { Menu, X, Sun, Moon, ChevronDown, Sparkles, Heart, Zap, Flame, ShieldAlert, Wind, Sunrise, Shield, Activity, Scroll, Users, Coins } from "lucide-react";
 import { useTheme } from "@/context/theme-context";
 import { Button } from "@/components/ui/button";
 
@@ -18,7 +18,9 @@ const services = [
   { name: "Karuna Reiki", href: "/services#karuna", desc: "Compassion-based healing for deep trauma.", icon: Wind },
   { name: "Melchizedek Healing", href: "/services#melchizedek", desc: "Activate light codes for higher consciousness.", icon: Shield },
   { name: "Humkara with Haleem", href: "/services#humkara", desc: "Purify the aura and align major chakras.", icon: Sunrise },
-  { name: "Distance Healing", href: "/services#distance", desc: "Energy alignment beyond physical limits.", icon: Activity },
+  { name: "Soul Contract Translation", href: "/services#soul-contract", desc: "Decode pre-birth agreements and your life path.", icon: Scroll },
+  { name: "Ancestral Healing", href: "/services#ancestral", desc: "Clear inherited blockages and family cycles.", icon: Users },
+  { name: "Money Reiki Healing", href: "/services#money-reiki", desc: "Align with abundance and clear financial blocks.", icon: Coins },
 ];
 
 export function Navbar() {
@@ -49,6 +51,8 @@ export function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services", hasDropdown: true },
+    { name: "Diet", href: "/diet" },
+    { name: "Testimonials", href: "/testimonials" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -89,7 +93,8 @@ export function Navbar() {
                   onMouseEnter={() => setMegaOpen(true)}
                   onMouseLeave={() => setMegaOpen(false)}
                 >
-                  <button
+                  <Link
+                    href={link.href}
                     className={`flex items-center gap-1 text-sm tracking-wider uppercase font-medium hover:text-gold-500 dark:hover:text-gold-400 transition-colors cursor-pointer py-2 ${isActive || pathname.startsWith("/services")
                       ? "text-gold-500 dark:text-gold-400 font-semibold"
                       : "text-foreground/80"
@@ -97,7 +102,7 @@ export function Navbar() {
                   >
                     {link.name}
                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${megaOpen ? "rotate-180" : ""}`} />
-                  </button>
+                  </Link>
 
                   {/* Mega Menu Dropdown */}
                   <AnimatePresence>
@@ -167,7 +172,7 @@ export function Navbar() {
           </button> */}
 
           <Link href="/contact">
-            <Button variant="primary" size="sm">
+            <Button variant="primary" size="md">
               Book Session
             </Button>
           </Link>

@@ -24,7 +24,7 @@ export function Timeline() {
       num: "03",
       icon: HeartPulse,
       title: "Energy Healing",
-      desc: "Relax completely in a peaceful environment while energy channels flow, dissolving stress and clearing deep-seated emotional blockages.",
+      desc: "Relax completely at home. The session is conducted via distance healing using your photograph as the energetic anchor, dissolving stress and clearing deep-seated blockages.",
     },
     {
       num: "04",

@@ -43,7 +43,7 @@ export default function Home() {
       <FAQ />
 
       {/* 10. Blog & Instagram Gallery Section */}
-      {/* <BlogNewsletter /> */}
+      {/* <BlogNewsletter /> */}    
 
       {/* 11. Large CTA Banner */}
       <CTA />

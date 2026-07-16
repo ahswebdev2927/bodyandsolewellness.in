@@ -42,6 +42,8 @@ export function Footer() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Healing Services", href: "/services" },
+    { name: "Diet Plan", href: "/diet" },
+    { name: "Testimonials", href: "/testimonials" },
     { name: "Contact & Booking", href: "/contact" },
   ];
 
@@ -50,7 +52,7 @@ export function Footer() {
     { name: "Karmic Reiki", href: "/services#karmic" },
     { name: "Twin Flame Healing", href: "/services#twin-flame" },
     { name: "Violet Flame Healing", href: "/services#violet-flame" },
-    { name: "Distance Healing", href: "/services#distance" },
+    { name: "Cord Cutting", href: "/services#cord-cutting" },
   ];
 
   return (

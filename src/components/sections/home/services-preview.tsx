@@ -128,19 +128,19 @@ export function ServicesPreview() {
 
             {/* Quick Metadata */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 my-2 border-y border-neutral-200/20 dark:border-neutral-800/20">
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5 text-gold-500 shrink-0" />
+              <div className="flex items-start gap-2">
+                <Clock className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
                 <div>
                   <h5 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Duration</h5>
                   <p className="text-sm font-medium text-foreground">{selectedService.duration}</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
-                <User className="w-5 h-5 text-gold-500 shrink-0" />
+              <div className="flex items-start gap-2">
+                <User className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
                 <div>
                   <h5 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">Ideal For</h5>
-                  <p className="text-sm font-medium text-foreground truncate max-w-[150px]" title={selectedService.whoItIsFor}>
+                  <p className="text-sm font-medium text-foreground" title={selectedService.whoItIsFor}>
                     {selectedService.whoItIsFor}
                   </p>
                 </div>
@@ -158,14 +158,6 @@ export function ServicesPreview() {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            {/* How It Works */}
-            <div>
-              <h4 className="font-serif text-lg text-foreground tracking-wide mb-2">How It Works</h4>
-              <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
-                {selectedService.howItWorks}
-              </p>
             </div>
 
             {/* Booking Action */}

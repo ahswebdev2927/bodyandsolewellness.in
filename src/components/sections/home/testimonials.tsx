@@ -26,7 +26,7 @@ const testimonials: Testimonial[] = [
     name: "Marcus Thorne",
     role: "Tech Entrepreneur",
     rating: 5,
-    text: "The distance healing sessions fit perfectly into my busy schedule. Despite the remote nature, I could feel a profound energetic warmth and alignment. It has become an essential part of my wellness routine.",
+    text: "The distance healing sessions fit perfectly into my busy schedule. Even from a distance, I could feel a profound energetic warmth and alignment. It has become an essential part of my wellness routine.",
     initials: "MT",
   },
   {

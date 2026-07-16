@@ -18,8 +18,8 @@ export function FAQ() {
     },
     {
       id: "q3",
-      title: "Is Distance Healing as effective as an in-person session?",
-      content: "Yes, absolutely. In quantum mechanics and energy fields, space and time are not boundary lines. The practitioner uses specialized Reiki symbols to establish connection with your energy field. The energy is directed with intention and behaves identically to an in-person laying of hands, providing deep stress relief and alignment.",
+      title: "Are all sessions conducted as distance healing, and are they effective?",
+      content: "Yes, absolutely. All our services are conducted via distance healing. In quantum mechanics and energy fields, space and time are not boundaries. We use specialized Reiki symbols and a recent photograph (your image) to connect with your unique energy grid. The healing energy is directed with intention and behaves identically to an in-person session, yielding deep, transformative results.",
     },
     {
       id: "q4",

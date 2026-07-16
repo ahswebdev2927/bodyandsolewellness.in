@@ -30,7 +30,7 @@ export function WhyChooseUs() {
     },
     {
       icon: Globe,
-      title: "Remote Sessions",
+      title: "Distance Healing",
       description: "Experience the deep transmutative qualities of high-frequency distance healing from anywhere globally."
     },
     {

@@ -40,7 +40,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     title: "The Quantum Science Behind Distance Reiki",
-    excerpt: "How remote healing sessions utilize quantum entanglement and conscious intention to heal across physical space.",
+    excerpt: "How distance healing sessions utilize quantum entanglement and conscious intention to heal across physical space.",
     date: "June 15, 2026",
     category: "Quantum Physics",
   },
