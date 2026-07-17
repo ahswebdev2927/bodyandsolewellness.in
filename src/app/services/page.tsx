@@ -214,11 +214,15 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="mt-4 flex gap-4">
-                  <Link href={`/contact?service=${encodeURIComponent(service.name)}`}>
+                  <a
+                    href={`https://wa.me/919573797979?text=${encodeURIComponent(`Hello Himabindu, I would like to book a session for ${service.name}.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button variant="primary" className="px-8">
                       Book {service.name}
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </motion.div>
             </div>

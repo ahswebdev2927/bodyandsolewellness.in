@@ -318,11 +318,15 @@ export default function AboutPage() {
             Book a personalized Usui Reiki session or distance alignment to clear old attachments, release chronic fatigue, and balance your chakra grids.
           </p>
           <div className="mt-4">
-            <Link href="/contact">
+            <a
+              href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20an%20alignment%20session."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="primary" size="lg">
                 Book Your Alignment Now
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

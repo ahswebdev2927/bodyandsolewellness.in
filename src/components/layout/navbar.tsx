@@ -11,14 +11,14 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   { name: "Reiki Healing", href: "/services#reiki", desc: "Restore balance, peace, and deep relaxation.", icon: Heart },
-  { name: "Karmic Reiki", href: "/services#karmic", desc: "Release past life blockages and karmic debts.", icon: ShieldAlert },
+  { name: "Karmic Reiki", href: "/services#karmic", desc: "6 weeks healing everyday for 45 mins", icon: ShieldAlert },
   { name: "Twin Flame Healing", href: "/services#twin-flame", desc: "Harmonize divine masculine & feminine energies.", icon: Flame },
   { name: "Violet Flame Healing", href: "/services#violet-flame", desc: "Transform negative energy into clarity & peace.", icon: Sparkles },
   { name: "Cord Cutting", href: "/services#cord-cutting", desc: "Release unhealthy attachments and regain energy.", icon: Zap },
   { name: "Karuna Reiki", href: "/services#karuna", desc: "Compassion-based healing for deep trauma.", icon: Wind },
   { name: "Melchizedek Healing", href: "/services#melchizedek", desc: "Activate light codes for higher consciousness.", icon: Shield },
   { name: "Humkara with Haleem", href: "/services#humkara", desc: "Purify the aura and align major chakras.", icon: Sunrise },
-  { name: "Soul Contract Translation", href: "/services#soul-contract", desc: "Decode pre-birth agreements and your life path.", icon: Scroll },
+  { name: "Soul Contract Cancellation", href: "/services#soul-contract", desc: "Release and cancel limiting pre-birth soul agreements.", icon: Scroll },
   { name: "Ancestral Healing", href: "/services#ancestral", desc: "Clear inherited blockages and family cycles.", icon: Users },
   { name: "Money Reiki Healing", href: "/services#money-reiki", desc: "Align with abundance and clear financial blocks.", icon: Coins },
 ];
@@ -171,11 +171,15 @@ export function Navbar() {
             {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button> */}
 
-          <Link href="/contact">
+          <a
+            href="https://wa.me/919573797979?text=Hello%20Himabindu,%20I%20would%20like%20to%20book%20a%20healing%20session."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="primary" size="md">
               Book Session
             </Button>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Actions (Menu Button) */}
@@ -240,11 +244,17 @@ export function Navbar() {
             </div>
 
             <div className="mt-8 flex flex-col gap-4">
-              <Link href="/contact" onClick={() => setIsOpen(false)} className="w-full">
+              <a
+                href="https://wa.me/919573797979?text=Hello%20Himabindu,%20I%20would%20like%20to%20book%20a%20healing%20session."
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="w-full"
+              >
                 <Button variant="primary" size="lg" className="w-full">
                   Book Session
                 </Button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

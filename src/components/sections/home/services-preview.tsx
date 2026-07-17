@@ -162,11 +162,16 @@ export function ServicesPreview() {
 
             {/* Booking Action */}
             <div className="mt-4 flex gap-4">
-              <Link href="/contact" className="w-full">
+              <a
+                href={`https://wa.me/919573797979?text=${encodeURIComponent(`Hello Himabindu, I would like to book a session for ${selectedService.name}.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
                 <Button variant="primary" className="w-full py-3" onClick={() => setSelectedService(null)}>
                   Book {selectedService.name} Session
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         )}

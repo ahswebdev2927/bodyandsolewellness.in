@@ -37,16 +37,21 @@ export function CTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4.5 w-full sm:w-auto">
-              <Link href="/contact" className="w-full sm:w-auto">
+              <a
+                href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20healing%20session."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
                 <Button
                   variant="primary"
                   size="lg"
-                  className="w-full sm:w-auto px-8"
+                  className="w-full px-8"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                 >
                   Book Session
                 </Button>
-              </Link>
+              </a>
               <Link href="/services" className="w-full sm:w-auto">
                 <Button
                   variant="glass"

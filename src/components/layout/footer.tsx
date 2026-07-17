@@ -144,10 +144,10 @@ export function Footer() {
         <div className="border-t border-neutral-200/20 dark:border-neutral-800/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-3 text-neutral-500 dark:text-neutral-400 text-xs">
             <span className="flex items-center gap-1.5">
-              <Phone className="w-3.5 h-3.5 text-gold-500" /> +1 (555) 777-8888
+              <Phone className="w-3.5 h-3.5 text-gold-500" /> +91 9573797979
             </span>
             <span className="flex items-center gap-1.5">
-              <Mail className="w-3.5 h-3.5 text-gold-500" /> contact@wellnessandpeace.com
+              <Mail className="w-3.5 h-3.5 text-gold-500" /> bodyandsoulwellness3@gmail.com
             </span>
           </div>
 

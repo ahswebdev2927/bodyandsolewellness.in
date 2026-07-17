@@ -294,11 +294,15 @@ export default function TestimonialsPage() {
                   Submit Feedback
                 </Button>
               </Link>
-              <Link href="/contact">
+              <a
+                href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20healing%20session."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button variant="outline" size="lg">
                   Book A Session
                 </Button>
-              </Link>
+              </a>
             </div>
           </Card>
         </div>

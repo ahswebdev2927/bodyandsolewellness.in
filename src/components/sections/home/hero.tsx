@@ -84,16 +84,21 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4.5"
         >
-          <Link href="/contact">
+          <a
+            href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20healing%20session."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto"
+          >
             <Button
               variant="primary"
               size="lg"
-              className="w-full sm:w-auto"
+              className="w-full"
               rightIcon={<ArrowRight className="w-4 h-4" />}
             >
               Book Your Session
             </Button>
-          </Link>
+          </a>
           <Link href="/services">
             <Button
               variant="glass"

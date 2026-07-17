@@ -180,11 +180,15 @@ export default function DietPage() {
             Our master practitioners offer energy scans and personalized wellness consultations to structure your ideal diet.
           </p>
           <div className="flex gap-4 mt-2">
-            <Link href="/contact">
+            <a
+              href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20Nutritional%20Scan%20%2F%20Diet%20Consultation."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button variant="primary" size="lg">
                 Book Nutritional Scan
               </Button>
-            </Link>
+            </a>
             <Link href="/services">
               <Button variant="outline" size="lg">
                 Explore Services

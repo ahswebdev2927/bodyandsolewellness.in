@@ -7,7 +7,6 @@ import { ServicesPreview } from "@/components/sections/home/services-preview";
 import { WhyChooseUs } from "@/components/sections/home/why-choose-us";
 import { Timeline } from "@/components/sections/home/timeline";
 import { EnergyExplained } from "@/components/sections/home/energy-explained";
-import { Testimonials } from "@/components/sections/home/testimonials";
 import { FAQ } from "@/components/sections/home/faq";
 import { BlogNewsletter } from "@/components/sections/home/blog-newsletter";
 import { CTA } from "@/components/sections/home/cta";
@@ -36,8 +35,6 @@ export default function Home() {
       {/* 7. Healing Journey Step Timeline */}
       <Timeline />
 
-      {/* 8. Client Testimonials Slider */}
-      <Testimonials />
 
       {/* 9. Accordion FAQ Section */}
       <FAQ />

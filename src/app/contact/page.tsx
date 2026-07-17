@@ -82,17 +82,26 @@ function ContactForm() {
     }
     
     setIsSubmitting(true);
-    // Simulate submission
+    
+    const messageText = `Hello Himabindu, I would like to book a session. Here are my details:
+- Name: ${formData.name}
+- Email: ${formData.email}
+- Service: ${formData.service}
+- Intentions/Message: ${formData.message || "None"}`;
+
+    const whatsappUrl = `https://wa.me/919573797979?text=${encodeURIComponent(messageText)}`;
+    
     setTimeout(() => {
       setIsSubmitting(false);
-      toast(`Thank you, ${formData.name}! Your booking request for ${formData.service} has been received.`, "success");
+      toast("Redirecting to WhatsApp to complete your booking request...", "success");
+      window.open(whatsappUrl, "_blank");
       setFormData({
         name: "",
         email: "",
         service: "",
         message: "",
       });
-    }, 1500);
+    }, 1000);
   };
 
   return (
@@ -191,7 +200,7 @@ export default function ContactPage() {
   ];
 
   const workingHours = [
-    { days: "All Days Available", hours: "10:00 AM – 10:00 PM" },
+    { days: "All Days Available", hours: "9:00 AM – 10:00 PM" },
   ];
 
   return (

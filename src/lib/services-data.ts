@@ -36,7 +36,7 @@ export const servicesData: ServiceDetail[] = [
   {
     id: "karmic",
     name: "Karmic Reiki",
-    shortDesc: "Karmic Reiki helps release past life and karmic blockages that limit your growth. It brings deep emotional cleansing, forgiveness, and spiritual freedom.",
+    shortDesc: "Karmic Reiki is a 6-week healing program (45 minutes everyday) to release past life and karmic blockages that limit your growth.",
     longDesc: "Karmic Reiki target patterns, cycles, and energetic blockages rooted in past experiences or inherited ancestral lines. By identifying these shadow-imprints in the aura, we break repeating toxic cycles and reclaim emotional liberty.",
     benefits: [
       "Identifies and severs repetitive toxic relationship cycles",
@@ -45,7 +45,7 @@ export const servicesData: ServiceDetail[] = [
       "Speeds up spiritual growth and clarity regarding life purpose"
     ],
     howItWorks: "Using specialized karmic symbols, the practitioner scans your energy aura to pinpoint karmic anchors, gently vaporizing old emotional debris to free your current path.",
-    duration: "6 Weeks",
+    duration: "6 Weeks (45 Mins Everyday)",
     price: "$145",
     whoItIsFor: "Those who feel stuck in repeating patterns, self-sabotaging habits, or negative life dynamics that seem beyond logical explanation.",
     icon: ShieldAlert,
@@ -161,19 +161,19 @@ export const servicesData: ServiceDetail[] = [
   },
   {
     id: "soul-contract",
-    name: "Soul Contract Translation",
-    shortDesc: "Translate and decode the energetic blueprint of your soul's primary incarnation contract, revealing your life path agreements, challenges, and destiny templates.",
-    longDesc: "A deep energetic reading and translation of your soul's pre-birth choices and contracts. By decoding your auric field and quantum blueprint, we highlight the specific lessons, karmic challenges, and latent talents your soul agreed to experience in this lifetime, allowing you to align with your highest timeline.",
+    name: "Soul Contract Cancellation",
+    shortDesc: "Release, clear, and cancel limiting pre-birth agreements and soul contracts that no longer serve your highest growth and spiritual freedom.",
+    longDesc: "A deep energetic process to identify and revoke outdated karmic agreements, obsolete vows, and limiting soul contracts. By tuning into your Akashic records, we guide you in cancelling binding spiritual obligations and reclaiming your absolute energetic sovereignty.",
     benefits: [
-      "Decodes pre-birth agreements and major life lessons",
-      "Reveals the deeper spiritual purpose behind chronic life obstacles",
-      "Unlocks dormant gifts and intuitive abilities",
-      "Provides a clear roadmap for personal and spiritual alignment"
+      "Cancels outdated spiritual vows and contracts",
+      "Releases energetic ties to past timelines and karmic debts",
+      "Unlocks sovereign free will and absolute personal power",
+      "Provides space for rewriting your destiny and highest timeline"
     ],
-    howItWorks: "Using your photo and full birth details, we tune into your Akashic records and auric templates to translate your contract, delivering a comprehensive alignment summary.",
+    howItWorks: "Using your photo and birth details, we scan your Akashic records to locate binding soul contracts, guiding you through a conscious cancellation and energetic release ceremony.",
     duration: "45 Minutes",
     price: "$155",
-    whoItIsFor: "Seekers looking for deep clarity on their life purpose, repeating roadblocks, and spiritual destiny.",
+    whoItIsFor: "Seekers looking to release repeating blockages, ancestral chains, and rewrite their spiritual destiny.",
     icon: Scroll,
     image: "/devine-imgs/soul.png",
   },
