@@ -31,7 +31,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$120 / $165",
     whoItIsFor: "Anyone seeking stress relief, recovery support, mental clarity, or a deep sense of peaceful grounding.",
     icon: Heart,
-    image: "/devine-imgs/reik.png",
+    image: "/devine-imgs/reik_v2.png",
   },
   {
     id: "karmic",
@@ -49,7 +49,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$145",
     whoItIsFor: "Those who feel stuck in repeating patterns, self-sabotaging habits, or negative life dynamics that seem beyond logical explanation.",
     icon: ShieldAlert,
-    image: "/devine-imgs/karm.png",
+    image: "/devine-imgs/karm_v2.png",
   },
   {
     id: "twin-flame",
@@ -67,7 +67,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$180",
     whoItIsFor: "Individuals going through intense relationship shifts, seeking conscious love, or wanting to unite their own inner polarities.",
     icon: Flame,
-    image: "/devine-imgs/twin.png",
+    image: "/devine-imgs/twin_v2.png",
   },
   {
     id: "violet-flame",
@@ -85,7 +85,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$130",
     whoItIsFor: "People feeling weighed down by heavy environments, toxic work situations, or chronic negative thoughts.",
     icon: Sparkles,
-    image: "/devine-imgs/viol.png",
+    image: "/devine-imgs/viol_v2.png",
   },
   {
     id: "cord-cutting",
@@ -103,7 +103,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$95",
     whoItIsFor: "Those struggling to move on from a past relationship, divorce, friendship, or old workplace.",
     icon: Zap,
-    image: "/devine-imgs/cord.png",
+    image: "/devine-imgs/cord_v2.png",
   },
   {
     id: "karuna",
@@ -121,7 +121,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$150",
     whoItIsFor: "Individuals undergoing therapy, deep inner-child healing, or recovering from serious life traumas.",
     icon: Wind,
-    image: "/devine-imgs/karu.png",
+    image: "/devine-imgs/karu_v2.png",
   },
   {
     id: "melchizedek",
@@ -139,7 +139,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$190",
     whoItIsFor: "Experienced spiritual seekers looking to expand their consciousness and connect with galactic grids.",
     icon: Shield,
-    image: "/devine-imgs/melc.png",
+    image: "/devine-imgs/melc_v2.png",
   },
   {
     id: "humkara",
@@ -157,7 +157,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$140",
     whoItIsFor: "People who feel under energetic attack, constantly fatigued, or unable to focus due to energetic overload.",
     icon: Sunrise,
-    image: "/devine-imgs/humk.png",
+    image: "/devine-imgs/humk_v2.png",
   },
   {
     id: "soul-contract",
@@ -175,7 +175,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$155",
     whoItIsFor: "Seekers looking to release repeating blockages, ancestral chains, and rewrite their spiritual destiny.",
     icon: Scroll,
-    image: "/devine-imgs/soul.png",
+    image: "/devine-imgs/soul_v2.png",
   },
   {
     id: "ancestral",
@@ -193,7 +193,7 @@ export const servicesData: ServiceDetail[] = [
     price: "$160",
     whoItIsFor: "Anyone aware of repeating family traumas, genetic illnesses, or systemic blocks in relationships or wealth.",
     icon: Users,
-    image: "/devine-imgs/ancestral.png",
+    image: "/devine-imgs/ancestral_v2.png",
   },
   {
     id: "money-reiki",
@@ -211,6 +211,6 @@ export const servicesData: ServiceDetail[] = [
     price: "$145",
     whoItIsFor: "Individuals experiencing financial stress, money blocks, career stagnation, or those wanting to scale their wealth consciousness.",
     icon: Coins,
-    image: "/devine-imgs/money.png",
+    image: "/devine-imgs/money_v2.png",
   }
 ];

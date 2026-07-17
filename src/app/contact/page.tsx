@@ -195,8 +195,9 @@ function ContactForm() {
 
 export default function ContactPage() {
   const contactDetails = [
-    { icon: Mail, label: "Email Correspondence", value: "contact@wellnessandpeace.com" },
-    { icon: Phone, label: "Phone Contact", value: "+1 (555) 777-8888" },
+    { icon: Phone, label: "Business Number", value: "9573797979" },
+    { icon: Phone, label: "WhatsApp Number", value: "9573797979" },
+    { icon: Mail, label: "Email ID", value: "bodyandsoulwellness3@Gmail.com" },
   ];
 
   const workingHours = [

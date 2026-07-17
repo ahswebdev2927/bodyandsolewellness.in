@@ -29,6 +29,7 @@ export function AboutPreview() {
                 src="/16.jpg.jpeg"
                 alt="Our Healing Sanctuary"
                 fill
+                unoptimized
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-w-768px) 100vw, 500px"
                 priority

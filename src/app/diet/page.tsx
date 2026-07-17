@@ -19,12 +19,14 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 interface DietProgram {
   title: string;
   desc: string;
   icon: React.ComponentType<any>;
   glowColor: "violet" | "gold" | "sage";
+  image: string;
 }
 
 const dietPrograms: DietProgram[] = [
@@ -32,61 +34,71 @@ const dietPrograms: DietProgram[] = [
     title: "Weight Loss",
     desc: "Tailored to boost your metabolism, optimize calories, and align portion sizing for sustainable fat loss while maintaining high energy.",
     icon: TrendingDown,
-    glowColor: "violet"
+    glowColor: "violet",
+    image: "/devine-imgs/diet/diet_weight_loss.png"
   },
   {
     title: "Weight Gain",
     desc: "Focuses on clean, nutrient-dense whole foods, muscle-building proteins, and healthy fats to support healthy weight gain and vitality.",
     icon: TrendingUp,
-    glowColor: "gold"
+    glowColor: "gold",
+    image: "/devine-imgs/diet/diet_weight_gain.png"
   },
   {
     title: "Cardiovascular Diseases",
     desc: "Heart-healthy nutrition plans rich in omega-3 fatty acids, leafy greens, and antioxidants to support circulation, blood pressure, and cardiovascular strength.",
     icon: Heart,
-    glowColor: "sage"
+    glowColor: "sage",
+    image: "/devine-imgs/diet/diet_cardio.png"
   },
   {
     title: "Hypothyroidism",
     desc: "Designed to support thyroid health, featuring selenium, iodine-rich foods, and clean minerals to optimize hormone synthesis and endocrine wellness.",
     icon: Zap,
-    glowColor: "violet"
+    glowColor: "violet",
+    image: "/devine-imgs/diet/diet_hypothyroid.png"
   },
   {
     title: "Pre-natal",
     desc: "Nourishing, nutrient-dense meal plans packed with essential vitamins like folic acid and iron to support a healthy pregnancy and baby development.",
     icon: Baby,
-    glowColor: "gold"
+    glowColor: "gold",
+    image: "/devine-imgs/diet/diet_prenatal.png"
   },
   {
     title: "Post-natal",
     desc: "Supports quick cellular recovery, maternal tissue repair, and hormonal stabilization for new mothers during the postpartum phase.",
     icon: Activity,
-    glowColor: "sage"
+    glowColor: "sage",
+    image: "/devine-imgs/diet/diet_postnatal.png"
   },
   {
     title: "Lactation",
     desc: "Hydrating, galactagogue-rich diets containing natural nutrients to support, increase, and enrich healthy milk production for nursing mothers.",
     icon: Droplets,
-    glowColor: "violet"
+    glowColor: "violet",
+    image: "/devine-imgs/diet/diet_lactation.png"
   },
   {
     title: "Sports Nutrition",
     desc: "Engineered for athletes, focusing on clean energy loading, optimal protein synthesis, hydration, and cellular recovery to maximize physical stamina.",
     icon: Flame,
-    glowColor: "gold"
+    glowColor: "gold",
+    image: "/devine-imgs/diet/diet_sports.png"
   },
   {
     title: "Diabetes",
     desc: "Glycemic-balanced meal schedules featuring complex carbohydrates and high fiber to manage blood glucose levels and improve insulin sensitivity.",
     icon: Scale,
-    glowColor: "sage"
+    glowColor: "sage",
+    image: "/devine-imgs/diet/diet_diabetes.png"
   },
   {
-    title: "PMOS",
+    title: "PCOS",
     desc: "Endocrine-supportive diets focusing on blood sugar stabilization, reducing internal inflammation, and balancing reproductive hormones.",
     icon: Sparkles,
-    glowColor: "violet"
+    glowColor: "violet",
+    image: "/devine-imgs/diet/diet_pcos_v2.png"
   }
 ];
 
@@ -149,16 +161,31 @@ export default function DietPage() {
                   <Card 
                     hoverEffect="lift" 
                     glowColor={program.glowColor} 
-                    className="p-8 h-full flex flex-col justify-between gap-6"
+                    className="h-[450px] flex flex-col group overflow-hidden p-0"
                   >
-                    <div className="flex flex-col gap-4">
-                      <span className="p-3.5 rounded-[20px] bg-purple-500/10 text-purple-600 dark:text-purple-300 self-start">
-                        <Icon className="w-6 h-6" />
+                    {/* Image Header */}
+                    <div className="relative w-full h-[60%] shrink-0 overflow-hidden">
+                      <Image
+                        src={program.image}
+                        alt={program.title}
+                        fill
+                        unoptimized
+                        className="object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                        sizes="(max-w-768px) 100vw, (max-w-1200px) 50vw, 33vw"
+                      />
+                      {/* Subtle dark gradient overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-80" />
+                    </div>
+
+                    {/* Card Content */}
+                    <div className="p-6 flex flex-col gap-3 h-[40%]">
+                      <span className="p-2.5 rounded-[16px] bg-purple-500/10 text-purple-600 dark:text-purple-300 self-start">
+                        <Icon className="w-5 h-5" />
                       </span>
-                      <h3 className="text-xl font-serif font-semibold text-foreground tracking-wide mt-2">
+                      <h3 className="text-lg font-serif font-semibold text-foreground tracking-wide mt-1">
                         {program.title}
                       </h3>
-                      <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans mt-1">
+                      <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-snug font-sans line-clamp-3">
                         {program.desc}
                       </p>
                     </div>
