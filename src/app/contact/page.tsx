@@ -191,9 +191,7 @@ export default function ContactPage() {
   ];
 
   const workingHours = [
-    { days: "Monday – Friday", hours: "9:00 AM – 7:00 PM" },
-    { days: "Saturday", hours: "10:00 AM – 5:00 PM" },
-    { days: "Sunday", hours: "Closed (Rest & Meditation)" },
+    { days: "All Days Available", hours: "10:00 AM – 10:00 PM" },
   ];
 
   return (
@@ -338,14 +336,18 @@ export default function ContactPage() {
                       Follow Us
                     </span>
                     <a
-                      href="#"
+                      href="https://www.instagram.com/bodyandsoulwellness_?igsh=M2wxb3lodDZxM3hn&utm_source=qr"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full border border-neutral-300 dark:border-neutral-800 flex items-center justify-center hover:bg-gold-500 dark:hover:bg-gold-400 hover:text-white dark:hover:text-neutral-950 transition-colors"
                       aria-label="Instagram"
                     >
                       <InstagramIcon className="w-4 h-4" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.facebook.com/share/1AhXTAhLFb/?mibextid=wwXIfr"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full border border-neutral-300 dark:border-neutral-800 flex items-center justify-center hover:bg-gold-500 dark:hover:bg-gold-400 hover:text-white dark:hover:text-neutral-950 transition-colors"
                       aria-label="Facebook"
                     >

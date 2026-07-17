@@ -178,16 +178,8 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Actions (Menu Button & Theme Toggle) */}
+        {/* Mobile Actions (Menu Button) */}
         <div className="flex md:hidden items-center gap-2">
-          <button
-            onClick={toggleTheme}
-            className="p-2.5 rounded-full text-foreground/80 hover:text-foreground hover:bg-neutral-100 dark:hover:bg-neutral-900/50 transition-colors"
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-          </button>
-
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2.5 rounded-full text-foreground/80 hover:text-foreground hover:bg-neutral-100 dark:hover:bg-neutral-900/50 transition-colors"

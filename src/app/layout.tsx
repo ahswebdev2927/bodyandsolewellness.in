@@ -36,8 +36,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${inter.variable} h-full antialiased dark`} // default to dark
-      style={{ colorScheme: "dark" }}
+      className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
+      style={{ colorScheme: "light" }}
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col font-sans selection:bg-purple-200/30 selection:text-purple-100">

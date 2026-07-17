@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
   <svg
@@ -81,14 +81,18 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/bodyandsoulwellness_?igsh=M2wxb3lodDZxM3hn&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-neutral-300 dark:border-neutral-800/80 flex items-center justify-center hover:bg-gold-500 dark:hover:bg-gold-400 hover:text-white dark:hover:text-neutral-950 hover:border-transparent transition-all duration-300"
                 aria-label="Instagram"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/1AhXTAhLFb/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-neutral-300 dark:border-neutral-800/80 flex items-center justify-center hover:bg-gold-500 dark:hover:bg-gold-400 hover:text-white dark:hover:text-neutral-950 hover:border-transparent transition-all duration-300"
                 aria-label="Facebook"
               >
@@ -139,9 +143,6 @@ export function Footer() {
         {/* Bottom Contact and Copyright Info */}
         <div className="border-t border-neutral-200/20 dark:border-neutral-800/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-3 text-neutral-500 dark:text-neutral-400 text-xs">
-            <span className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-gold-500" /> 128 Healing Sanctuary Lane, Aura Suite
-            </span>
             <span className="flex items-center gap-1.5">
               <Phone className="w-3.5 h-3.5 text-gold-500" /> +1 (555) 777-8888
             </span>
