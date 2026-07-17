@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function AboutPage() {
   const values = [
     {
@@ -194,10 +194,16 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-5 flex justify-center"
           >
-            <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-200/50 dark:border-neutral-800/40 glass flex items-center justify-center p-6 shadow-2xl">
-              {/* Sacred geometry lines */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-gold-400/15 pointer-events-none" />
-              <Compass className="w-16 h-16 text-gold-500/40 animate-spin-slow" />
+            <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-200/50 dark:border-neutral-800/40 shadow-2xl">
+              <Image
+                src="/devine-imgs/profile-pic.jpeg"
+                alt="Practitioner Profile"
+                fill
+                unoptimized
+                className="object-cover"
+                sizes="(max-w-1024px) 100vw, 380px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-80 pointer-events-none" />
             </div>
           </motion.div>
 
