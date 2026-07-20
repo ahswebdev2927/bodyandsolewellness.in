@@ -12,7 +12,8 @@ import {
   Zap, 
   TrendingUp, 
   TrendingDown, 
-  Baby 
+  Baby,
+  CheckCircle 
 } from "lucide-react";
 import { PageWrapper } from "@/components/layout/page-wrapper";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -20,6 +21,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { Accordion } from "@/components/ui/accordion";
 
 interface DietProgram {
   title: string;
@@ -28,6 +30,24 @@ interface DietProgram {
   glowColor: "violet" | "gold" | "sage";
   image: string;
 }
+
+const dietFaqs = [
+  {
+    id: "diff",
+    title: "What is the difference between a nutritionist and a dietitian?",
+    content: "Dietitians usually have clinical training, while nutritionists focus on overall diet and wellness guidance."
+  },
+  {
+    id: "cost",
+    title: "How much does a nutritionist consultation cost in Hyderabad?",
+    content: "Consultation charges vary depending on experience, specialization, and program duration."
+  },
+  {
+    id: "time",
+    title: "How long does it take to see results?",
+    content: "Results depend on consistency, lifestyle, and health condition, but noticeable changes are often seen within a few weeks."
+  }
+];
 
 const dietPrograms: DietProgram[] = [
   {
@@ -197,7 +217,78 @@ export default function DietPage() {
         </div>
       </section>
 
-      {/* 3. Call to Action */}
+      {/* 3. SEO Content: About Nutritionists & Benefits */}
+      <section className="py-16 px-6 relative z-10 bg-neutral-50/5 dark:bg-neutral-950/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col gap-6"
+          >
+            <span className="px-4 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-700 dark:text-emerald-300 text-xs font-semibold tracking-widest uppercase self-start">
+              Best Nutritionist in Hyderabad
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-serif text-foreground tracking-wide leading-tight">
+              Nutrition and <br />
+              <span className="italic text-emerald-600 dark:text-emerald-400">Weight Management</span>
+            </h2>
+            <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans">
+              A nutritionist is a health professional who specializes in understanding how food and nutrients affect the body and overall well-being. They assess individual dietary needs, medical conditions, and lifestyle habits to create personalized nutrition plans that promote better health, manage weight, prevent diseases, and improve energy levels.
+            </p>
+            <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans">
+              In addition to creating meal plans, nutritionists educate individuals and groups about healthy eating habits, food preparation, and nutritional balance. Their ultimate aim is to empower people to build a sustainable relationship with food and make choices that lead to long-term health and vitality.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col gap-6"
+          >
+            <Card glowColor="sage" hoverEffect="none" className="p-8">
+              <h3 className="text-xl font-serif font-semibold text-foreground tracking-wide mb-6">
+                Why Consult a Certified Nutritionist?
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { title: "Personalized Diet Planning", desc: "Custom plans based on age, metabolism, medical history, and goals." },
+                  { title: "Safe & Sustainable Weight Loss", desc: "Balanced meal plans that promote healthy, long-term weight management." },
+                  { title: "Medical Nutrition Therapy", desc: "Crucial for managing conditions like diabetes, PCOS, thyroid imbalance, and cholesterol." },
+                  { title: "Improved Energy & Immunity", desc: "The right combination of nutrients boosts immunity and enhances digestion." }
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-4">
+                    <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="text-sm font-semibold text-foreground">{item.title}</h4>
+                      <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1">{item.desc}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 4. FAQs Section */}
+      <section className="py-16 px-6 relative z-10">
+        <div className="max-w-3xl mx-auto flex flex-col items-center">
+          <SectionHeading
+            badge="Common Questions"
+            title="Frequently Asked Questions"
+            subtitle="Learn more about consulting a nutritionist in Hyderabad and how our expert dietitians can help you."
+          />
+          <div className="w-full mt-10">
+            <Accordion items={dietFaqs} allowMultiple />
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Call to Action */}
       <section className="py-16 px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
           <h2 className="text-3xl sm:text-4xl font-serif text-foreground tracking-wide">
