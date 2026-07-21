@@ -10,7 +10,7 @@ import { useTheme } from "@/context/theme-context";
 import { Button } from "@/components/ui/button";
 
 const services = [
-  { name: "Reiki Healing", href: "/services#reiki", desc: "Restore balance, peace, and deep relaxation.", icon: Heart },
+  { name: "Reiki Distance Healing", href: "/services#reiki", desc: "Restore balance, peace, and deep relaxation.", icon: Heart },
   { name: "Karmic Reiki", href: "/services#karmic", desc: "6 weeks healing everyday for 45 mins", icon: ShieldAlert },
   { name: "Twin Flame Healing", href: "/services#twin-flame", desc: "Harmonize divine masculine & feminine energies.", icon: Flame },
   { name: "Violet Flame Healing", href: "/services#violet-flame", desc: "Transform negative energy into clarity & peace.", icon: Sparkles },

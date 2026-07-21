@@ -48,7 +48,7 @@ export function Footer() {
   ];
 
   const servicesLinks = [
-    { name: "Reiki Healing", href: "/services#reiki" },
+    { name: "Reiki Distance Healing", href: "/services#reiki" },
     { name: "Karmic Reiki", href: "/services#karmic" },
     { name: "Twin Flame Healing", href: "/services#twin-flame" },
     { name: "Violet Flame Healing", href: "/services#violet-flame" },

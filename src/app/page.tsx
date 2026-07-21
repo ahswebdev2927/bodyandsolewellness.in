@@ -1,6 +1,7 @@
 import React from "react";
 import { PageWrapper } from "@/components/layout/page-wrapper";
 import { Hero } from "@/components/sections/home/hero";
+import { DietPreview } from "@/components/sections/home/diet-preview";
 import { Stats } from "@/components/sections/home/stats";
 import { AboutPreview } from "@/components/sections/home/about-preview";
 import { ServicesPreview } from "@/components/sections/home/services-preview";
@@ -16,6 +17,9 @@ export default function Home() {
     <PageWrapper>
       {/* 1. Full Screen Hero Section */}
       <Hero />
+
+      {/* 1.5 Diet Programs Preview */}
+      <DietPreview />
 
       {/* 2. Trust Stats Section */}
       <Stats />

@@ -114,7 +114,7 @@ const dietPrograms: DietProgram[] = [
     image: "/devine-imgs/diet/diet_diabetes.png"
   },
   {
-    title: "PCOS",
+    title: "PMOS",
     desc: "Endocrine-supportive diets focusing on blood sugar stabilization, reducing internal inflammation, and balancing reproductive hormones.",
     icon: Sparkles,
     glowColor: "violet",
@@ -145,7 +145,7 @@ export default function DietPage() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-serif text-foreground tracking-wide leading-tight"
           >
-            Cosmic Diet & <span className="italic text-gradient-gold">Nutritional Programs</span>
+            Diet & <span className="italic text-gradient-gold">Nutritional Programs</span>
           </motion.h1>
 
           <motion.p
@@ -181,10 +181,10 @@ export default function DietPage() {
                   <Card 
                     hoverEffect="lift" 
                     glowColor={program.glowColor} 
-                    className="h-[450px] flex flex-col group overflow-hidden p-0"
+                    className="flex flex-col group overflow-hidden p-0"
                   >
                     {/* Image Header */}
-                    <div className="relative w-full h-[60%] shrink-0 overflow-hidden">
+                    <div className="relative w-full aspect-[4/3] shrink-0 overflow-hidden">
                       <Image
                         src={program.image}
                         alt={program.title}
@@ -198,14 +198,14 @@ export default function DietPage() {
                     </div>
 
                     {/* Card Content */}
-                    <div className="p-6 flex flex-col gap-3 h-[40%]">
+                    <div className="p-6 flex flex-col gap-3 flex-1">
                       <span className="p-2.5 rounded-[16px] bg-purple-500/10 text-purple-600 dark:text-purple-300 self-start">
                         <Icon className="w-5 h-5" />
                       </span>
                       <h3 className="text-lg font-serif font-semibold text-foreground tracking-wide mt-1">
                         {program.title}
                       </h3>
-                      <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-snug font-sans line-clamp-3">
+                      <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-snug font-sans">
                         {program.desc}
                       </p>
                     </div>
@@ -288,6 +288,51 @@ export default function DietPage() {
         </div>
       </section>
 
+      {/* 4.5. Consultation & Booking Form */}
+      <section className="py-16 px-6 relative z-10 bg-neutral-50/10 dark:bg-neutral-950/10">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 bg-background border border-neutral-200/50 dark:border-neutral-800/40 rounded-[32px] p-8 md:p-12 shadow-2xl items-center">
+          <div className="flex-1 flex flex-col gap-6">
+            <span className="px-4 py-1.5 rounded-full border border-gold-400/20 bg-gold-400/5 text-gold-700 dark:text-gold-300 text-xs font-semibold tracking-widest uppercase self-start">
+              Expert Consultation
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-serif text-foreground tracking-wide leading-tight">
+              Start your journey for just <span className="text-gradient-gold">Rs 500</span>
+            </h2>
+            <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed font-sans text-base">
+              Book a personalized diet consulting call with our expert nutritionists. We will assess your current lifestyle, medical history, and specific goals to draft an effective, sustainable roadmap just for you.
+            </p>
+            <ul className="space-y-3 mt-2">
+              <li className="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                <CheckCircle className="w-4 h-4 text-gold-500 shrink-0" /> 30-Minute 1-on-1 Consultation
+              </li>
+              <li className="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                <CheckCircle className="w-4 h-4 text-gold-500 shrink-0" /> Comprehensive Goal Assessment
+              </li>
+              <li className="flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                <CheckCircle className="w-4 h-4 text-gold-500 shrink-0" /> Customized Nutritional Advice
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex-1 w-full bg-neutral-50 dark:bg-neutral-900/50 rounded-[24px] p-6 border border-neutral-200/50 dark:border-neutral-800/50">
+            <form className="flex flex-col gap-4" onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              const text = `Hello! I would like to book a Diet Consultation (Rs 500).%0A%0AName: ${formData.get('name')}%0APhone: ${formData.get('phone')}%0AGoal: ${formData.get('goal')}`;
+              window.open(`https://wa.me/919573797979?text=${text}`, '_blank');
+            }}>
+              <h3 className="text-xl font-serif font-semibold text-foreground mb-2">Request a Callback</h3>
+              <input required name="name" type="text" placeholder="Your Full Name" className="w-full bg-background border border-neutral-200 dark:border-neutral-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500/50" />
+              <input required name="phone" type="tel" placeholder="Phone Number" className="w-full bg-background border border-neutral-200 dark:border-neutral-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500/50" />
+              <textarea required name="goal" placeholder="What are your health goals or conditions? (e.g. Weight Loss, PMOS)" rows={3} className="w-full bg-background border border-neutral-200 dark:border-neutral-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500/50 resize-none" />
+              <Button type="submit" variant="primary" className="w-full mt-2">
+                Submit & Book via WhatsApp
+              </Button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* 5. Call to Action */}
       <section className="py-16 px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
@@ -299,12 +344,12 @@ export default function DietPage() {
           </p>
           <div className="flex gap-4 mt-2">
             <a
-              href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20Nutritional%20Scan%20%2F%20Diet%20Consultation."
+              href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20Diet%20Consultation."
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button variant="primary" size="lg">
-                Book Nutritional Scan
+                Book Diet Consultation
               </Button>
             </a>
             <Link href="/services">

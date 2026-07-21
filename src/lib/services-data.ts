@@ -17,9 +17,9 @@ export interface ServiceDetail {
 export const servicesData: ServiceDetail[] = [
   {
     id: "reiki",
-    name: "Reiki Healing",
-    shortDesc: "Reiki Healing channels divine energy to restore balance, peace, and vitality. Experience deep relaxation as your mind, body, and soul realign in harmony.",
-    longDesc: "Traditional Usui Reiki is a Japanese energetic practice where the practitioner channels life force energy (Qi/Ki) into the client's body. By laying hands gently on or slightly above energy centers (Chakras), it breaks up energetic stagna, relieves stress, and facilitates the body's natural self-healing capabilities.",
+    name: "Reiki Distance Healing",
+    shortDesc: "Reiki Distance Healing channels divine energy to restore balance, peace, and vitality. Experience deep relaxation as your mind, body, and soul realign in harmony.",
+    longDesc: "Traditional Usui Reiki is a Japanese energetic practice where the practitioner channels life force energy (Qi/Ki) into the client's energy field. It breaks up energetic stagnation, relieves stress, and facilitates the body's natural self-healing capabilities.",
     benefits: [
       "Dissolves stress, mental fatigue, and deep tension",
       "Accelerates physical healing and supports recovery from illnesses",
@@ -145,7 +145,7 @@ export const servicesData: ServiceDetail[] = [
     id: "humkara",
     name: "Humkara with Haleem",
     shortDesc: "Powerful spiritual sound and symbol healing that purifies the aura, removes negativity, and balances chakras.",
-    longDesc: "Humkara with Haleem is a highly intensive technique using the power of ancient symbols and mantras. It quickly cleanses negative thought forms, warding off external heavy energy and realigning the chakras.",
+    longDesc: "Humkara with Haleem is a highly intensive technique using the power of ancient symbols and mantras. It quickly cleanses negative thought forms, warding off external heavy energy and realigning the chakras. It is highly effective for removing obstacles in court cases and helping students focus and retain information correctly.",
     benefits: [
       "Quickly clears heavy or dark negative energies from the aura",
       "Realigns and fully balances all major chakras",
