@@ -6,10 +6,25 @@ import { motion } from "framer-motion";
 import { Sparkles, ArrowRight, Compass } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function Hero() {
-  // Generate random particles for aura effect
-  const particles = Array.from({ length: 15 });
+const PARTICLES = [
+  { width: 8, height: 8, left: "12%", top: "25%", duration: 18, delay: 0 },
+  { width: 6, height: 6, left: "85%", top: "15%", duration: 22, delay: 1 },
+  { width: 10, height: 10, left: "45%", top: "70%", duration: 16, delay: 2 },
+  { width: 5, height: 5, left: "70%", top: "40%", duration: 25, delay: 0.5 },
+  { width: 7, height: 7, left: "25%", top: "80%", duration: 20, delay: 3 },
+  { width: 9, height: 9, left: "60%", top: "20%", duration: 19, delay: 1.5 },
+  { width: 4, height: 4, left: "15%", top: "65%", duration: 24, delay: 2.5 },
+  { width: 8, height: 8, left: "90%", top: "75%", duration: 17, delay: 0.8 },
+  { width: 6, height: 6, left: "35%", top: "30%", duration: 21, delay: 1.2 },
+  { width: 11, height: 11, left: "78%", top: "85%", duration: 15, delay: 3.5 },
+  { width: 5, height: 5, left: "50%", top: "10%", duration: 23, delay: 0.2 },
+  { width: 7, height: 7, left: "5%", top: "45%", duration: 20, delay: 2.1 },
+  { width: 9, height: 9, left: "65%", top: "60%", duration: 18, delay: 1.8 },
+  { width: 6, height: 6, left: "40%", top: "90%", duration: 26, delay: 4 },
+  { width: 8, height: 8, left: "95%", top: "35%", duration: 19, delay: 0.7 },
+];
 
+export function Hero() {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden px-6 py-20">
       {/* Light Rays & Cosmic background particles */}
@@ -19,15 +34,15 @@ export function Hero() {
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[50vw] h-[50vw] max-w-[600px] rounded-full bg-gold-400/5 dark:bg-gold-500/5 blur-[110px] z-0" />
 
         {/* Aura floating particles */}
-        {particles.map((_, i) => (
+        {PARTICLES.map((p, i) => (
           <motion.div
             key={i}
             className="absolute rounded-full bg-gold-200/20 dark:bg-purple-400/10"
             style={{
-              width: Math.random() * 8 + 4,
-              height: Math.random() * 8 + 4,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              width: p.width,
+              height: p.height,
+              left: p.left,
+              top: p.top,
             }}
             animate={{
               y: [0, -100, 0],
@@ -35,10 +50,10 @@ export function Hero() {
               scale: [1, 1.3, 1],
             }}
             transition={{
-              duration: Math.random() * 15 + 15,
+              duration: p.duration,
               repeat: Infinity,
               ease: "easeInOut",
-              delay: Math.random() * 5,
+              delay: p.delay,
             }}
           />
         ))}

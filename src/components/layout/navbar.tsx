@@ -73,10 +73,9 @@ export function Navbar() {
           <Image
             src="/Reiki  logo.png"
             alt="Wellness & Peace Logo"
-            width={5550}
-            height={150}
-            style={{ width: "auto", height: "85px" }}
-            className="object-contain dark:brightness-110 dark:contrast-120 group-hover:scale-[1.02] transition-transform duration-300"
+            width={314}
+            height={85}
+            className="h-[85px] w-auto object-contain dark:brightness-110 dark:contrast-120 group-hover:scale-[1.02] transition-transform duration-300"
             priority
           />
         </Link>

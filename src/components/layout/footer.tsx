@@ -70,10 +70,9 @@ export function Footer() {
               <Image
                 src="/Reiki  logo.png"
                 alt="Wellness & Peace Logo"
-                width={135}
+                width={500}
                 height={135}
-                style={{ width: "auto", height: "135px" }}
-                className="object-contain dark:brightness-110 dark:contrast-120 group-hover:scale-[1.02] transition-transform duration-300"
+                className="h-[135px] w-auto object-contain dark:brightness-110 dark:contrast-120 group-hover:scale-[1.02] transition-transform duration-300"
                 priority
               />
             </Link>
