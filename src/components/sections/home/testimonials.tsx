@@ -16,25 +16,25 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Eleanor Vance",
+    name: "Eeshwari Reddy",
     role: "Creative Director",
     rating: 5,
     text: "My Reiki healing session at Wellness & Peace was unlike anything I've experienced. I walked in carrying weeks of burnout and left feeling completely renewed, grounded, and emotionally balanced.",
-    initials: "EV",
+    initials: "ER",
   },
   {
-    name: "Marcus Thorne",
+    name: "Mahesh Kumar",
     role: "Tech Entrepreneur",
     rating: 5,
     text: "The distance healing sessions fit perfectly into my busy schedule. Even from a distance, I could feel a profound energetic warmth and alignment. It has become an essential part of my wellness routine.",
-    initials: "MT",
+    initials: "MK",
   },
   {
-    name: "Sophia Martinez",
+    name: "Sowmya Rao",
     role: "Yoga Instructor",
     rating: 5,
     text: "The Twin Flame session helped clear blockages that had been impacting my relationships for years. The practitioners are highly compassionate, intuitive, and create a deeply trusting atmosphere.",
-    initials: "SM",
+    initials: "SR",
   },
 ];
 

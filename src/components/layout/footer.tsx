@@ -53,6 +53,7 @@ export function Footer() {
     { name: "Twin Flame Healing", href: "/services#twin-flame" },
     { name: "Violet Flame Healing", href: "/services#violet-flame" },
     { name: "Cord Cutting", href: "/services#cord-cutting" },
+    { name: "Melchizedek Healing", href: "/services#melchizedek" },
   ];
 
   return (

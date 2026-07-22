@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-
+/* Disable dark mode by overriding the dark variant to use a class that is never applied */
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --font-serif: var(--font-cormorant), serif;
   --font-sans: var(--font-inter), sans-serif;

@@ -22,38 +22,38 @@ interface Testimonial {
 
 const testimonialsList: Testimonial[] = [
   {
-    name: "Richard Wool",
+    name: "Rajesh Varma",
     role: "Client",
     rating: 5,
     text: "Our journey was full of ego clashes and misunderstandings. Twin Flame Healing helped us release past-life karma and emotional baggage. The divine masculine energy softened, and communication improved beautifully. We are now engaged and preparing for marriage. Forever grateful.",
-    initials: "RW",
+    initials: "RV",
     category: "Twin Flame",
     service: "Twin Flame Healing"
   },
   {
-    name: "Olivia & Richards",
+    name: "Lavanya & Sreenivas",
     role: "Client Couple",
     rating: 5,
     text: "Twin Flame Healing helped us understand why we kept repeating the same conflicts. The sessions brought emotional balance, forgiveness, and spiritual growth for both of us. Instead of reacting from old triggers, we now communicate with awareness and love. Reuniting and restarting our marriage journey feels like destiny aligned at the right time.",
-    initials: "OR",
+    initials: "LS",
     category: "Twin Flame",
     service: "Twin Flame Healing"
   },
   {
-    name: "Josephine Mary",
+    name: "Jyothi Reddy",
     role: "Client",
     rating: 5,
     text: "I learned that union starts within. The healing shifted my vibration completely. I stopped chasing and started trusting. My twin flame returned with clarity and commitment. We are now planning our future together.",
-    initials: "JM",
+    initials: "JR",
     category: "Twin Flame",
     service: "Twin Flame Connection"
   },
   {
-    name: "Suman Grewal",
+    name: "Sunitha Rao",
     role: "Client",
     rating: 5,
     text: "After just a few Twin Flame Reiki sessions, I noticed a huge shift in my energy. The anxiety and constant overthinking about my twin flame reduced, and I felt stronger emotionally. It helped me focus on my own growth rather than chasing the connection.",
-    initials: "SG",
+    initials: "SR",
     category: "Twin Flame",
     service: "Twin Flame Reiki"
   },
@@ -67,47 +67,47 @@ const testimonialsList: Testimonial[] = [
     service: "Twin Flame Reiki"
   },
   {
-    name: "Sanvita Bansari",
+    name: "Srija Chowdary",
     role: "Client",
     rating: 5,
     text: "I was feeling heartbroken and spiritually drained. These sessions restored my inner strength and self-love. Instead of feeling dependent on the relationship, I now feel whole on my own — and that changed everything in my twin flame journey.",
-    initials: "SB",
+    initials: "SC",
     category: "Twin Flame",
     service: "Twin Flame Healing"
   },
   {
-    name: "Alfred Thomas",
+    name: "Aditya Varma",
     role: "Client",
     rating: 5,
     text: "The Melchizedek Method felt like a soul-level activation. During the session, I experienced a deep sense of divine connection and clarity about my life purpose. It was not just healing — it felt like a spiritual upgrade.",
-    initials: "AT",
+    initials: "AV",
     category: "Melchizedek",
     service: "Melchizedek Method"
   },
   {
-    name: "Soniyaa Gurubani",
+    name: "Sneha Latha",
     role: "Client",
     rating: 5,
     text: "I had tried many healing modalities before, but this was different. The Melchizedek Method helped me release karmic patterns and old energetic imprints I had carried for years. I feel lighter, more aligned, and spiritually protected.",
-    initials: "SG",
+    initials: "SL",
     category: "Melchizedek",
     service: "Melchizedek Method"
   },
   {
-    name: "Ramesh Dalal",
+    name: "Ramesh Raju",
     role: "Client",
     rating: 5,
     text: "This healing opened my heart and higher chakras in a way I can't explain. My intuition has become stronger, my meditations deeper, and I feel guided and supported by higher realms. It truly felt like sacred light work.",
-    initials: "RD",
+    initials: "RR",
     category: "Melchizedek",
     service: "Melchizedek Activation"
   },
   {
-    name: "Rehman Ansari",
+    name: "Ramakrishna Naidu",
     role: "Client",
     rating: 5,
     text: "After my Melchizedek session, I felt a powerful shift in my consciousness. Old fears dissolved, and I now feel more connected to divine wisdom and inner peace. It helped me step into my spiritual path with confidence.",
-    initials: "RA",
+    initials: "RN",
     category: "Melchizedek",
     service: "Melchizedek Method"
   },

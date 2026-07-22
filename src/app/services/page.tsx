@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Sparkles, Clock, User, CheckCircle2, Compass } from "lucide-react";
@@ -12,6 +12,19 @@ import { servicesData } from "@/lib/services-data";
 import Link from "next/link";
 
 export default function ServicesPage() {
+  // Handle cross-page hash routing smoothly
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // slight delay to allow layout shifts from images to settle
+    }
+  }, []);
+
   // SVG gradients for alternating visual blocks
   const gradients = [
     "from-purple-500/10 to-indigo-500/5",
@@ -81,41 +94,43 @@ export default function ServicesPage() {
               </div>
               
               <h2 className="text-2xl sm:text-3xl font-serif text-foreground tracking-wide">
-                The Sacred Method of <span className="italic text-gradient-gold">Distance Healing</span>
+                All Services Are Performed via <span className="italic text-gradient-gold">Distance Healing</span>
               </h2>
               
               <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed font-light max-w-2xl">
                 In energy healing and quantum fields, physical distance does not exist. All our services are performed via distance healing. We establish a strong energetic link utilizing a <strong>recent photograph (your image)</strong>, full name, and birth date. This photograph acts as a unique energetic anchor, allowing high-frequency alignments to be directed to your aura with exact precision.
               </p>
 
+              {/* 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-6 text-left">
                 <div className="p-5 rounded-2xl border border-neutral-200/20 bg-neutral-50/50 dark:bg-neutral-900/50">
-                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-sm font-serif">
-                    <span className="w-2 h-2 rounded-full bg-gold-500"></span> 1. Visual Anchor (Photo)
+                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-base font-serif">
+                    <span className="w-2 h-2 rounded-full bg-gold-500 shrink-0"></span> 1. Visual Anchor (Photo)
                   </div>
-                  <p className="text-xs text-neutral-400 leading-relaxed">
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
                     A clear photograph allows the practitioner to isolate and connect with your energetic signature during the session.
                   </p>
                 </div>
                 
                 <div className="p-5 rounded-2xl border border-neutral-200/20 bg-neutral-50/50 dark:bg-neutral-900/50">
-                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-sm font-serif">
-                    <span className="w-2 h-2 rounded-full bg-gold-500"></span> 2. Cozy Receptive Rest
+                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-base font-serif">
+                    <span className="w-2 h-2 rounded-full bg-gold-500 shrink-0"></span> 2. Cozy Receptive Rest
                   </div>
-                  <p className="text-xs text-neutral-400 leading-relaxed">
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
                     At the booked hour, you simply lie down in quiet contemplation from your home while the alignment is being completed.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-2xl border border-neutral-200/20 bg-neutral-50/50 dark:bg-neutral-900/50">
-                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-sm font-serif">
-                    <span className="w-2 h-2 rounded-full bg-gold-500"></span> 3. Energetic Report
+                  <div className="text-gold-500 mb-2 font-semibold flex items-center gap-2 text-base font-serif">
+                    <span className="w-2 h-2 rounded-full bg-gold-500 shrink-0"></span> 3. Energetic Report
                   </div>
-                  <p className="text-xs text-neutral-400 leading-relaxed">
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
                     Following the healing session, you will receive a comprehensive breakdown of the blockages cleared and energy grids restored.
                   </p>
                 </div>
               </div>
+              */}
             </div>
           </motion.div>
         </div>

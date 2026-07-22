@@ -74,7 +74,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="max-w-2xl mx-auto text-neutral-500 dark:text-neutral-400 text-base sm:text-lg md:text-xl leading-relaxed font-light mb-12"
         >
-          Incorporate Reiki into your daily life. Healing support you in every task of life. Heal health ailments, balance body energy, and clear deep-rooted emotions.
+          Incorporate Reiki into your daily life. Healing supports you in every task of life. Heal health ailments, balance body energy, and clear deep-rooted emotions.
         </motion.p>
 
         {/* CTAs */}

@@ -2,18 +2,18 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Sparkles, 
-  Heart, 
-  Droplets, 
-  Activity, 
-  Flame, 
-  Scale, 
-  Zap, 
-  TrendingUp, 
-  TrendingDown, 
+import {
+  Sparkles,
+  Heart,
+  Droplets,
+  Activity,
+  Flame,
+  Scale,
+  Zap,
+  TrendingUp,
+  TrendingDown,
   Baby,
-  CheckCircle 
+  CheckCircle
 } from "lucide-react";
 import { PageWrapper } from "@/components/layout/page-wrapper";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -178,9 +178,9 @@ export default function DietPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: idx * 0.05 }}
                 >
-                  <Card 
-                    hoverEffect="lift" 
-                    glowColor={program.glowColor} 
+                  <Card
+                    hoverEffect="lift"
+                    glowColor={program.glowColor}
                     className="flex flex-col group overflow-hidden p-0"
                   >
                     {/* Image Header */}
@@ -334,7 +334,7 @@ export default function DietPage() {
       </section>
 
       {/* 5. Call to Action */}
-      <section className="py-16 px-6 text-center relative z-10">
+      {/* <section className="py-16 px-6 text-center relative z-10">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
           <h2 className="text-3xl sm:text-4xl font-serif text-foreground tracking-wide">
             Ready to Align Your Energy and Nutrition?
@@ -359,7 +359,7 @@ export default function DietPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </PageWrapper>
   );
 }

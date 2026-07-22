@@ -72,18 +72,18 @@ export const servicesData: ServiceDetail[] = [
   {
     id: "violet-flame",
     name: "Violet Flame Healing",
-    shortDesc: "Transforms negative energy into peace, clarity, and spiritual purification using the alchemical energy of St. Germain.",
-    longDesc: "The Violet Flame is a high-frequency spiritual energy that penetrates cells, releasing negative patterns, emotional baggage, and heavy vibrations. It acts as an energetic purifier, converting dense emotions into peace, clarity, and love.",
+    shortDesc: "Mainly focused on removing deep energetic blockages, releasing stagnant negative energy, and restoring spiritual clarity, peace, and purity.",
+    longDesc: "The Violet Flame is a high-frequency spiritual energy specifically used to remove deep energetic blockages, clear emotional stagnations, and transmutate heavy vibrations. It acts as a powerful energetic purifier, penetrating cell memories to dissolve negative patterns, toxic baggage, and inner obstacles into peace, clarity, and unconditional love.",
     benefits: [
+      "Removes deep-rooted energetic, emotional, and spiritual blockages",
       "Transmutes low-frequency energies, fear, and anger into higher states",
-      "Cleanses the aura and energy field of psychic pollution",
-      "Elevates your consciousness and spiritual alignment",
-      "Speeds up recovery from toxic situations or environments"
+      "Cleanses the aura and energy field of psychic pollution and toxic buildup",
+      "Elevates your consciousness and speeds up recovery from stagnant life situations"
     ],
-    howItWorks: "Through guided visual alignment and energetic channeling, the practitioner wraps your auric field in the transmutational violet spectrum, dissolving blockages at a sub-atomic level.",
+    howItWorks: "Through guided visual alignment and energetic channeling, the practitioner wraps your auric field in the transmutational violet spectrum, dissolving stubborn blockages at a sub-atomic level.",
     duration: "45 Minutes",
     price: "$130",
-    whoItIsFor: "People feeling weighed down by heavy environments, toxic work situations, or chronic negative thoughts.",
+    whoItIsFor: "Anyone seeking to remove persistent energy blockages, feel spiritually purified, and release heavy emotional or environmental stagnations.",
     icon: Sparkles,
     image: "/devine-imgs/viol_v2.png",
   },

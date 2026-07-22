@@ -13,7 +13,7 @@ const services = [
   { name: "Reiki Distance Healing", href: "/services#reiki", desc: "Restore balance, peace, and deep relaxation.", icon: Heart },
   { name: "Karmic Reiki", href: "/services#karmic", desc: "6 weeks healing everyday for 45 mins", icon: ShieldAlert },
   { name: "Twin Flame Healing", href: "/services#twin-flame", desc: "Harmonize divine masculine & feminine energies.", icon: Flame },
-  { name: "Violet Flame Healing", href: "/services#violet-flame", desc: "Transform negative energy into clarity & peace.", icon: Sparkles },
+  { name: "Violet Flame Healing", href: "/services#violet-flame", desc: "Mainly for removing deep energetic blockages & restoring clarity.", icon: Sparkles },
   { name: "Cord Cutting", href: "/services#cord-cutting", desc: "Release unhealthy attachments and regain energy.", icon: Zap },
   { name: "Karuna Reiki", href: "/services#karuna", desc: "Compassion-based healing for deep trauma.", icon: Wind },
   { name: "Melchizedek Healing", href: "/services#melchizedek", desc: "Activate light codes for higher consciousness.", icon: Shield },
