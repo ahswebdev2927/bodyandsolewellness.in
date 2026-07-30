@@ -21,16 +21,6 @@ export function FAQ() {
       title: "Are all sessions conducted as distance healing, and are they effective?",
       content: "Yes, absolutely. All our services are conducted via distance healing. In quantum mechanics and energy fields, space and time are not boundaries. We use specialized Reiki symbols and a recent photograph (your image) to connect with your unique energy grid. The healing energy is directed with intention and behaves identically to an in-person session, yielding deep, transformative results.",
     },
-    {
-      id: "q4",
-      title: "How many sessions will I need to see results?",
-      content: "While many clients experience profound relaxation, stress reduction, and emotional relief in their very first session, chronic physical ailments or deep-rooted emotional blocks are best addressed with a series of 3 to 5 sessions spaced weekly or bi-weekly. This allows the energy field to stabilize and integrate the changes.",
-    },
-    {
-      id: "q5",
-      title: "Do I need to prepare anything before my appointment?",
-      content: "We recommend drinking plenty of water on the day of your session. Wear loose, comfortable clothing (you remain fully clothed). Try to avoid heavy meals or excessive caffeine 2 hours before the session. Most importantly, bring an open mind and heart, ready to receive and heal.",
-    },
   ];
 
   return (

@@ -318,19 +318,19 @@ export default function AboutPage() {
       <section className="py-16 sm:py-16 px-6 relative z-10 text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-foreground tracking-wide">
-            Ready to Begin Your <span className="italic text-gradient-gold">Alignment?</span>
+            Ready to Begin Your <span className="italic text-gradient-gold">Healing Journey?</span>
           </h2>
           <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-2xl">
-            Book a personalized Usui Reiki session or distance alignment to clear old attachments, release chronic fatigue, and balance your chakra grids.
+            Book a personalized Usui Reiki session or distance healing session to clear old attachments, release chronic fatigue, and balance your chakra grids.
           </p>
           <div className="mt-4">
             <a
-              href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20an%20alignment%20session."
+              href="https://wa.me/919573797979?text=Hello%20Himabindu%2C%20I%20would%20like%20to%20book%20a%20healing%20session."
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button variant="primary" size="lg">
-                Book Your Alignment Now
+                Book Your Healing Session
               </Button>
             </a>
           </div>
