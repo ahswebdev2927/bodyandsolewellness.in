@@ -7,8 +7,8 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { 
-  Clock, Calendar, ArrowLeft, Sparkles, User, Tag, Share2, Bookmark, 
-  CheckCircle2, ExternalLink, HelpCircle, Phone, Mail, MessageCircle, Heart, ShieldCheck 
+  Clock, Calendar, ArrowLeft, Sparkles, Tag, Share2, 
+  CheckCircle2, ExternalLink, HelpCircle, Phone, Mail, MessageCircle, Globe, Heart, ShieldCheck 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -126,7 +126,7 @@ export default function ArticleDetailPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-xs font-medium transition-colors"
+                  className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-xs font-medium transition-colors cursor-pointer"
                 >
                   <Share2 className="w-3.5 h-3.5 text-gold-500" />
                   <span>{copied ? "Link Copied!" : "Share"}</span>
@@ -140,17 +140,17 @@ export default function ArticleDetailPage() {
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative h-64 sm:h-96 rounded-3xl overflow-hidden mb-12 shadow-xl border border-neutral-200/60 dark:border-neutral-800"
+            className="relative h-72 sm:h-[420px] rounded-3xl overflow-hidden mb-12 shadow-2xl border border-neutral-200/80 dark:border-neutral-800"
           >
             <Image
-              src="/devine-imgs/img5.jpg"
+              src="/devine-imgs/reiki-blog-hero.png"
               alt="Reiki Distance Healing Session"
               fill
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/70 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 text-white text-xs sm:text-sm font-light italic">
+            <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 text-white text-xs sm:text-sm font-light italic bg-neutral-950/40 backdrop-blur-md p-4 rounded-2xl border border-white/10">
               "Energy flows where intention goes — Distance Reiki restores your natural frequency wherever you are."
             </div>
           </motion.div>
@@ -225,7 +225,7 @@ export default function ArticleDetailPage() {
               </h3>
 
               {/* 45 Minutes Highlight Badge */}
-              <div className="my-6 p-6 rounded-2xl bg-gradient-to-r from-purple-900/10 via-gold-500/10 to-purple-900/10 dark:from-purple-950/40 dark:to-neutral-900 border border-gold-500/30 flex items-center gap-5">
+              <div className="my-6 p-6 rounded-2xl bg-gradient-to-r from-purple-900/10 via-gold-500/10 to-purple-900/10 dark:from-purple-950/40 dark:to-neutral-900 border border-gold-500/30 flex items-center gap-5 shadow-sm">
                 <div className="w-14 h-14 rounded-2xl bg-gold-500/20 text-gold-600 dark:text-gold-400 flex items-center justify-center font-serif text-2xl font-bold border border-gold-500/40 shrink-0">
                   45m
                 </div>
@@ -269,11 +269,11 @@ export default function ArticleDetailPage() {
               </p>
 
               <ul className="space-y-3 pl-0 list-none my-6">
-                <li className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800">
+                <li className="flex items-center gap-3 p-3.5 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800 shadow-sm">
                   <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0" />
                   <span>Anyone seeking stress relief</span>
                 </li>
-                <li className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800">
+                <li className="flex items-center gap-3 p-3.5 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800 shadow-sm">
                   <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0" />
                   <span>
                     Individuals looking for{" "}
@@ -292,11 +292,11 @@ export default function ArticleDetailPage() {
                     support
                   </span>
                 </li>
-                <li className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800">
+                <li className="flex items-center gap-3 p-3.5 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800 shadow-sm">
                   <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0" />
                   <span>People wanting greater mental clarity</span>
                 </li>
-                <li className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800">
+                <li className="flex items-center gap-3 p-3.5 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200/60 dark:border-neutral-800 shadow-sm">
                   <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0" />
                   <span>Those seeking a deep sense of peaceful grounding</span>
                 </li>
@@ -455,67 +455,135 @@ export default function ArticleDetailPage() {
               </p>
             </div>
 
-            {/* Section 7: Contact Us */}
-            <div className="mt-12 p-8 rounded-3xl bg-gradient-to-b from-purple-900/10 via-neutral-900/50 to-neutral-950 border border-purple-500/20 dark:border-purple-500/30">
-              <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-foreground mb-4 flex items-center gap-2">
-                <Link href="/contact" className="hover:text-gold-500 transition-colors">
-                  Contact Us
-                </Link>
-                <ExternalLink className="w-5 h-5 text-gold-500 inline" />
-              </h3>
+            {/* Section 7: REDESIGNED LUXURY CONTACT US CARD */}
+            <div className="mt-16 relative rounded-3xl border border-gold-500/30 bg-gradient-to-br from-neutral-900 via-neutral-950 to-purple-950/70 p-8 sm:p-12 shadow-2xl overflow-hidden group">
+              {/* Background ambient lighting */}
+              <div className="absolute top-0 right-0 w-80 h-80 bg-gold-500/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-gold-500/15 transition-all duration-700" />
+              <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-600/20 rounded-full blur-[100px] pointer-events-none" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-sm">
-                <div className="flex items-center gap-3">
-                  <ExternalLink className="w-4 h-4 text-gold-500 shrink-0" />
-                  <span><strong>Website:</strong> <a href="https://bodyandsoulwellness.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 hover:underline">bodyandsoulwellness.in</a></span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-gold-500 shrink-0" />
-                  <span><strong>Phone:</strong> <a href="tel:+919573797979" className="hover:text-gold-500">+91 95737 97979</a></span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MessageCircle className="w-4 h-4 text-gold-500 shrink-0" />
-                  <span><strong>WhatsApp:</strong> <a href="https://wa.me/919573797979" target="_blank" rel="noopener noreferrer" className="hover:text-gold-500">+91 95737 97979</a></span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 text-gold-500 shrink-0" />
-                  <span><strong>Email:</strong> <a href="mailto:bodyandsoulwellness3@gmail.com" className="hover:text-gold-500">bodyandsoulwellness3@gmail.com</a></span>
-                </div>
-              </div>
+              <div className="relative z-10">
+                {/* Header Badge & Title */}
+                <div className="mb-8 text-center sm:text-left">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/25 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                    <Sparkles className="w-4 h-4 text-gold-400" />
+                    <span>Connect With Body & Soul Wellness</span>
+                  </div>
 
-              <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-6">
-                Take the first step toward greater relaxation, inner peace, and holistic wellness with a professional{" "}
-                <Link
-                  href="/services#reiki"
-                  className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline"
-                >
-                  Reiki Distance Healing
-                </Link>{" "}
-                <Link
-                  href="/services#reiki"
-                  className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline"
-                >
-                  Reiki session
-                </Link>{" "}
-                from Body &amp; Soul Wellness.
-              </p>
+                  <h3 className="font-serif text-3xl sm:text-4xl font-normal text-white tracking-tight">
+                    <Link href="/contact" className="hover:text-gold-400 transition-colors">
+                      Contact Us
+                    </Link>
+                  </h3>
 
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="https://wa.me/919573797979?text=Hello%20Himabindu,%20I%20would%20like%20to%20book%20a%20Reiki%20Distance%20Healing%20session."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="primary" size="lg" className="flex items-center gap-2">
-                    <MessageCircle className="w-5 h-5" />
-                    <span>Book 45-Min Session via WhatsApp</span>
-                  </Button>
-                </a>
-                <Link href="/contact">
-                  <Button variant="outline" size="lg" className="border-gold-500/40 hover:bg-gold-500/10">
-                    Contact Us Page
-                  </Button>
-                </Link>
+                  <p className="text-sm text-neutral-400 mt-2 max-w-xl leading-relaxed">
+                    Take the first step toward greater relaxation, inner peace, and holistic wellness with a professional{" "}
+                    <Link href="/services#reiki" className="text-gold-400 font-semibold hover:underline">
+                      Reiki Distance Healing
+                    </Link>{" "}
+                    <Link href="/services#reiki" className="text-gold-400 font-semibold hover:underline">
+                      Reiki session
+                    </Link>{" "}
+                    from Body &amp; Soul Wellness.
+                  </p>
+                </div>
+
+                {/* 4 Grid Info Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  {/* Website */}
+                  <a
+                    href="https://bodyandsoulwellness.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-neutral-900/80 border border-neutral-800 hover:border-gold-500/40 hover:bg-neutral-900 transition-all duration-300 group/card"
+                  >
+                    <div className="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 group-hover/card:scale-110 group-hover/card:bg-gold-500/20 group-hover/card:text-gold-400 transition-all">
+                      <Globe className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <span className="text-[11px] text-neutral-500 uppercase tracking-wider block font-semibold">Website</span>
+                      <span className="text-sm font-medium text-neutral-200 group-hover/card:text-gold-400 transition-colors">
+                        bodyandsoulwellness.in
+                      </span>
+                    </div>
+                  </a>
+
+                  {/* Phone */}
+                  <a
+                    href="tel:+919573797979"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-neutral-900/80 border border-neutral-800 hover:border-gold-500/40 hover:bg-neutral-900 transition-all duration-300 group/card"
+                  >
+                    <div className="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 group-hover/card:scale-110 group-hover/card:bg-gold-500/20 group-hover/card:text-gold-400 transition-all">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <span className="text-[11px] text-neutral-500 uppercase tracking-wider block font-semibold">Phone</span>
+                      <span className="text-sm font-medium text-neutral-200 group-hover/card:text-gold-400 transition-colors">
+                        +91 95737 97979
+                      </span>
+                    </div>
+                  </a>
+
+                  {/* WhatsApp */}
+                  <a
+                    href="https://wa.me/919573797979?text=Hello%20Himabindu,%20I%20would%20like%20to%20book%20a%20Reiki%20Distance%20Healing%20session."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-neutral-900/80 border border-neutral-800 hover:border-gold-500/40 hover:bg-neutral-900 transition-all duration-300 group/card"
+                  >
+                    <div className="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 group-hover/card:scale-110 group-hover/card:bg-emerald-500/20 transition-all">
+                      <MessageCircle className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <span className="text-[11px] text-neutral-500 uppercase tracking-wider block font-semibold">WhatsApp</span>
+                      <span className="text-sm font-medium text-neutral-200 group-hover/card:text-emerald-400 transition-colors">
+                        +91 95737 97979
+                      </span>
+                    </div>
+                  </a>
+
+                  {/* Email */}
+                  <a
+                    href="mailto:bodyandsoulwellness3@gmail.com"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-neutral-900/80 border border-neutral-800 hover:border-gold-500/40 hover:bg-neutral-900 transition-all duration-300 group/card"
+                  >
+                    <div className="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 group-hover/card:scale-110 group-hover/card:bg-gold-500/20 group-hover/card:text-gold-400 transition-all">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <span className="text-[11px] text-neutral-500 uppercase tracking-wider block font-semibold">Email</span>
+                      <span className="text-sm font-medium text-neutral-200 group-hover/card:text-gold-400 transition-colors truncate max-w-[180px] sm:max-w-none block">
+                        bodyandsoulwellness3@gmail.com
+                      </span>
+                    </div>
+                  </a>
+                </div>
+
+                {/* Call-to-action Action Buttons */}
+                <div className="pt-6 border-t border-neutral-800/80 flex flex-wrap items-center justify-between gap-4">
+                  <div className="flex items-center gap-2 text-xs text-neutral-400">
+                    <ShieldCheck className="w-4 h-4 text-gold-400" />
+                    <span>Confidential & Compassionate Care Guaranteed</span>
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://wa.me/919573797979?text=Hello%20Himabindu,%20I%20would%20like%20to%20book%20a%20Reiki%20Distance%20Healing%20session."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button variant="primary" size="lg" className="flex items-center gap-2 shadow-lg shadow-gold-500/10">
+                        <MessageCircle className="w-5 h-5" />
+                        <span>Book 45-Min Session</span>
+                      </Button>
+                    </a>
+
+                    <Link href="/contact">
+                      <Button variant="outline" size="lg" className="border-neutral-700 text-neutral-200 hover:border-gold-400 hover:text-gold-400">
+                        <span>Visit Contact Page</span>
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.article>

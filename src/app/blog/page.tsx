@@ -18,7 +18,7 @@ const blogPosts = [
     readTime: "5 min read",
     date: "August 3, 2026",
     author: "Body & Soul Wellness",
-    image: "/devine-imgs/img5.jpg",
+    image: "/devine-imgs/reiki-blog-hero.png",
     featured: true,
     excerpt: "In today’s fast-paced world, stress, emotional pressure, and mental fatigue can affect overall well-being. Reiki Distance Healing offers a gentle and convenient way to experience relaxation and energetic balance without being physically present.",
     tags: ["Reiki Distance Healing", "Reiki Session", "Natural Recovery", "Emotional Pressure"],
@@ -32,11 +32,11 @@ const blogPosts = [
     readTime: "6 min read",
     date: "July 28, 2026",
     author: "Body & Soul Wellness",
-    image: "/devine-imgs/img2.jpg",
+    image: "/devine-imgs/karm_v2.png",
     featured: false,
     excerpt: "Explore how daily 45-minute Karmic Reiki sessions help clear deep-rooted soul contracts and release repetitive life obstacles.",
     tags: ["Karmic Reiki", "Energy Healing", "Soul Contracts"],
-    slug: "/blog/reiki-distance-healing", // leads to featured article for now
+    slug: "/blog/reiki-distance-healing",
   },
   {
     id: "violet-flame-transmutation",
@@ -46,7 +46,7 @@ const blogPosts = [
     readTime: "4 min read",
     date: "July 15, 2026",
     author: "Body & Soul Wellness",
-    image: "/devine-imgs/img3.jpg",
+    image: "/devine-imgs/viol_v2.png",
     featured: false,
     excerpt: "Learn how the sacred Violet Flame technique transmutes stagnant emotional heaviness and restores your energetic aura.",
     tags: ["Violet Flame", "Emotional Clarity", "Aura Cleansing"],
@@ -142,13 +142,15 @@ export default function BlogIndexPage() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
               {/* Featured Image */}
-              <div className="lg:col-span-6 relative min-h-[300px] lg:min-h-[440px] overflow-hidden">
+              <div className="lg:col-span-6 relative min-h-[320px] lg:min-h-[460px] overflow-hidden">
                 <Image
                   src={featuredPost.image}
                   alt={featuredPost.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/60 via-transparent to-transparent" />
                 <div className="absolute top-6 left-6 px-3.5 py-1.5 rounded-full bg-gold-500 text-white dark:text-neutral-950 text-xs font-semibold tracking-wider uppercase shadow-md">
                   Featured Article
                 </div>
@@ -245,14 +247,14 @@ export default function BlogIndexPage() {
                   className="rounded-2xl border border-neutral-200/60 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/80 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="relative h-48 overflow-hidden">
+                    <div className="relative h-52 overflow-hidden">
                       <Image
                         src={post.image}
                         alt={post.title}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-neutral-900/75 backdrop-blur-md text-white text-xs font-medium">
+                      <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-neutral-900/80 backdrop-blur-md text-white text-xs font-medium border border-white/10">
                         {post.category}
                       </div>
                     </div>
