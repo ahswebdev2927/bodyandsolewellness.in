@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
-import { Clock, Calendar, ArrowRight, Sparkles, User, Tag, Search, BookOpen, ExternalLink, HelpCircle, CheckCircle2 } from "lucide-react";
+import { Clock, Calendar, ArrowRight, Sparkles, User, Tag, Search, BookOpen, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogPosts = [
@@ -186,26 +186,28 @@ export default function BlogIndexPage() {
                     {featuredPost.excerpt}
                   </p>
 
-                  {/* Interactive Tags previewing bold links */}
+                  {/* Clean Topic Pills */}
                   <div className="mb-8">
                     <span className="text-xs font-semibold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider block mb-2">
-                      Key Topics & Internal Links:
+                      Key Topics:
                     </span>
                     <div className="flex flex-wrap gap-2">
-                      <Link href="/services#reiki" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors">
+                      <Link href="/services#reiki" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
                         Reiki Distance Healing
                         <ExternalLink className="w-3 h-3 ml-0.5" />
                       </Link>
-                      <Link href="/services#reiki" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors">
+                      <Link href="/services#reiki" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
                         Reiki Session
                         <ExternalLink className="w-3 h-3 ml-0.5" />
                       </Link>
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-xs border border-amber-500/20" title="Placeholder: Page for Natural Recovery does not currently exist">
-                        Natural Recovery *
-                      </span>
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-xs border border-amber-500/20" title="Placeholder: Page for Emotional Pressure does not currently exist">
-                        Emotional Pressure *
-                      </span>
+                      <Link href="/diet" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
+                        Natural Recovery
+                        <ExternalLink className="w-3 h-3 ml-0.5" />
+                      </Link>
+                      <Link href="/services#karmic" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
+                        Emotional Pressure
+                        <ExternalLink className="w-3 h-3 ml-0.5" />
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -8,7 +8,7 @@ import { Footer } from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { 
   Clock, Calendar, ArrowLeft, Sparkles, Tag, Share2, 
-  CheckCircle2, ExternalLink, HelpCircle, Phone, Mail, MessageCircle, Globe, Heart, ShieldCheck 
+  CheckCircle2, ExternalLink, Phone, Mail, MessageCircle, Globe, ShieldCheck 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -70,7 +70,7 @@ export default function ArticleDetailPage() {
               </span>
             </div>
 
-            {/* Document Header Title & Highlight Bar */}
+            {/* Clean Main Document Title Header */}
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-foreground leading-tight mb-6">
               <Link href="/services#reiki" className="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
                 Reiki Distance Healing
@@ -80,31 +80,13 @@ export default function ArticleDetailPage() {
                 Reiki Session
               </Link>
               <span className="text-neutral-400 font-sans mx-2">|</span>
-              <span className="relative group inline-block">
-                <a
-                  href="#natural-recovery"
-                  className="underline underline-offset-4 decoration-amber-500/60 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
-                  title="Placeholder: Page for Natural Recovery does not currently exist"
-                >
-                  Natural Recovery
-                </a>
-                <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded border border-amber-500/20 font-sans font-normal" title="Placeholder Link Note">
-                  (Placeholder)
-                </span>
-              </span>
+              <Link href="/diet" className="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
+                Natural Recovery
+              </Link>
               <span className="text-neutral-400 font-sans mx-2">|</span>
-              <span className="relative group inline-block">
-                <a
-                  href="#emotional-pressure"
-                  className="underline underline-offset-4 decoration-amber-500/60 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
-                  title="Placeholder: Page for Emotional Pressure does not currently exist"
-                >
-                  Emotional Pressure
-                </a>
-                <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded border border-amber-500/20 font-sans font-normal" title="Placeholder Link Note">
-                  (Placeholder)
-                </span>
-              </span>
+              <Link href="/services#karmic" className="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
+                Emotional Pressure
+              </Link>
             </h1>
 
             <h2 className="font-serif text-xl sm:text-2xl italic font-normal text-gold-600 dark:text-gold-400 mb-8 leading-relaxed">
@@ -155,15 +137,6 @@ export default function ArticleDetailPage() {
             </div>
           </motion.div>
 
-          {/* Internal Link Guide Box */}
-          <div className="mb-10 p-4 rounded-2xl bg-amber-500/10 dark:bg-amber-400/10 border border-amber-500/30 text-xs text-amber-900 dark:text-amber-200 flex items-start gap-3">
-            <HelpCircle className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 shrink-0" />
-            <div>
-              <span className="font-semibold block mb-0.5">Interactive Article Navigation:</span>
-              Bold terms throughout this article are clickable. Terms with <span className="text-purple-600 dark:text-purple-300 font-semibold">purple links</span> navigate to active pages on our site. Terms with <span className="text-amber-600 dark:text-amber-400 font-semibold underline">amber tags</span> are placeholder links for topics without dedicated pages yet.
-            </div>
-          </div>
-
           {/* Article Body Content */}
           <motion.article
             initial={{ opacity: 0, y: 20 }}
@@ -174,18 +147,12 @@ export default function ArticleDetailPage() {
             {/* Introduction */}
             <p className="text-base sm:text-lg leading-relaxed">
               In today’s fast-paced world, stress,{" "}
-              <span className="relative inline-block group">
-                <a
-                  href="#emotional-pressure"
-                  className="font-bold text-amber-700 dark:text-amber-300 hover:text-gold-500 underline decoration-amber-500/50"
-                  title="Placeholder Link: Dedicated page for Emotional Pressure does not exist yet"
-                >
-                  emotional pressure
-                </a>
-                <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1 py-0.2 rounded border border-amber-500/20 font-normal">
-                  (Note: Placeholder)
-                </span>
-              </span>
+              <Link
+                href="/services#karmic"
+                className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline decoration-purple-400/50"
+              >
+                emotional pressure
+              </Link>
               , and mental fatigue can affect overall well-being.{" "}
               <Link
                 href="/services#reiki"
@@ -277,18 +244,12 @@ export default function ArticleDetailPage() {
                   <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0" />
                   <span>
                     Individuals looking for{" "}
-                    <span className="relative inline-block group">
-                      <a
-                        href="#natural-recovery"
-                        className="font-bold text-amber-700 dark:text-amber-300 hover:text-gold-500 underline decoration-amber-500/50"
-                        title="Placeholder Link: Dedicated page for Natural Recovery does not exist yet"
-                      >
-                        Natural Recovery
-                      </a>
-                      <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1 py-0.2 rounded border border-amber-500/20 font-normal">
-                        (Note: Placeholder)
-                      </span>
-                    </span>{" "}
+                    <Link
+                      href="/diet"
+                      className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline decoration-purple-400/50"
+                    >
+                      Natural Recovery
+                    </Link>{" "}
                     support
                   </span>
                 </li>
@@ -324,22 +285,22 @@ export default function ArticleDetailPage() {
                 <div className="p-6 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-sm">
                   <h4 className="font-serif text-xl font-semibold text-gold-600 dark:text-gold-400 mb-2">
                     Supports{" "}
-                    <span className="relative inline-block group">
-                      <a
-                        href="#natural-recovery"
-                        className="font-bold text-amber-700 dark:text-amber-300 hover:text-gold-500 underline decoration-amber-500/50"
-                        title="Placeholder Link: Dedicated page for Natural Recovery does not exist yet"
-                      >
-                        Natural Recovery
-                      </a>
-                      <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1 py-0.2 rounded border border-amber-500/20 font-normal">
-                        (Note: Placeholder)
-                      </span>
-                    </span>
+                    <Link
+                      href="/diet"
+                      className="font-bold text-gold-600 dark:text-gold-400 hover:underline"
+                    >
+                      Natural Recovery
+                    </Link>
                   </h4>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
                     By encouraging the body's natural healing processes, Reiki may support{" "}
-                    <span className="font-bold text-amber-700 dark:text-amber-300">Natural Recovery</span> and overall well-being.
+                    <Link
+                      href="/diet"
+                      className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline decoration-purple-400/50"
+                    >
+                      Natural Recovery
+                    </Link>{" "}
+                    and overall well-being.
                   </p>
                 </div>
 
@@ -350,18 +311,12 @@ export default function ArticleDetailPage() {
                   </h4>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
                     Reiki helps clear stagnant emotions such as grief, worry,{" "}
-                    <span className="relative inline-block group">
-                      <a
-                        href="#emotional-pressure"
-                        className="font-bold text-amber-700 dark:text-amber-300 hover:text-gold-500 underline decoration-amber-500/50"
-                        title="Placeholder Link: Dedicated page for Emotional Pressure does not exist yet"
-                      >
-                        emotional pressure
-                      </a>
-                      <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1 py-0.2 rounded border border-amber-500/20 font-normal">
-                        (Note: Placeholder)
-                      </span>
-                    </span>
+                    <Link
+                      href="/services#karmic"
+                      className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline decoration-purple-400/50"
+                    >
+                      emotional pressure
+                    </Link>
                     , and emotional heaviness, promoting a calmer state of mind.
                   </p>
                 </div>
@@ -418,31 +373,19 @@ export default function ArticleDetailPage() {
                   <ExternalLink className="w-3 h-3 inline ml-0.5 opacity-70" />
                 </Link>{" "}
                 is a gentle wellness practice that encourages relaxation, emotional balance, and inner peace. Whether you're seeking stress relief,{" "}
-                <span className="relative inline-block group">
-                  <a
-                    href="#natural-recovery"
-                    className="font-bold text-amber-700 dark:text-amber-300 hover:text-gold-500 underline decoration-amber-500/50"
-                    title="Placeholder Link: Dedicated page for Natural Recovery does not exist yet"
-                  >
-                    Natural Recovery
-                  </a>
-                  <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1 py-0.2 rounded border border-amber-500/20 font-normal">
-                    (Note: Placeholder)
-                  </span>
-                </span>
+                <Link
+                  href="/diet"
+                  className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline decoration-purple-400/50"
+                >
+                  Natural Recovery
+                </Link>
                 , improved mental clarity, or relief from{" "}
-                <span className="relative inline-block group">
-                  <a
-                    href="#emotional-pressure"
-                    className="font-bold text-amber-700 dark:text-amber-300 hover:text-gold-500 underline decoration-amber-500/50"
-                    title="Placeholder Link: Dedicated page for Emotional Pressure does not exist yet"
-                  >
-                    emotional pressure
-                  </a>
-                  <span className="inline-block ml-1 text-[10px] text-amber-600 dark:text-amber-400 bg-amber-500/10 px-1 py-0.2 rounded border border-amber-500/20 font-normal">
-                    (Note: Placeholder)
-                  </span>
-                </span>
+                <Link
+                  href="/services#karmic"
+                  className="font-bold text-purple-600 dark:text-purple-400 hover:text-gold-500 underline decoration-purple-400/50"
+                >
+                  emotional pressure
+                </Link>
                 , a 45-minute{" "}
                 <Link
                   href="/services#reiki"
