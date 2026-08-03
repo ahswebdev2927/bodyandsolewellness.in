@@ -44,6 +44,7 @@ export function Footer() {
     { name: "Healing Services", href: "/services" },
     { name: "Diet Plan", href: "/diet" },
     { name: "Testimonials", href: "/testimonials" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact & Booking", href: "/contact" },
   ];
 

@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   description: "Experience professional Reiki healing, Twin Flame healing, and spiritual transformation at Wellness & Peace. A sanctuary of peace, balance, and luxury holistic therapy.",
   keywords: ["Reiki Healing", "Karmic Reiki", "Twin Flame Healing", "Violet Flame Healing", "Distance Healing", "Cosmic Wellness", "Spiritual Healing", "Luxury Spa", "Soul Contract Cancellation", "Ancestral Healing", "Money Reiki Healing"],
   authors: [{ name: "Wellness & Peace" }],
+  icons: {
+    icon: "/Reikifav.png",
+    shortcut: "/Reikifav.png",
+    apple: "/Reikifav.png",
+  },
   openGraph: {
     title: "Wellness & Peace | Premium Cosmic Wellness & Reiki Healing",
     description: "Realign your mind, body, and spirit in our modern luxury energy healing sanctuary.",
