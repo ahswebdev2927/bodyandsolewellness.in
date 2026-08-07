@@ -15,6 +15,42 @@ import { CTA } from "@/components/sections/home/cta";
 export default function Home() {
   return (
     <PageWrapper>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HealthAndBeautyBusiness",
+            "name": "Body and Soul Wellness",
+            "image": "https://bodyandsoulwellness.in/logo.png",
+            "@id": "https://bodyandsoulwellness.in/#business",
+            "url": "https://bodyandsoulwellness.in/",
+            "telephone": "+91-9573797979",
+            "email": "bodyandsoulwellness3@gmail.com",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "09:00",
+              "closes": "22:00"
+            }
+          })
+        }}
+      />
       {/* 1. Full Screen Hero Section */}
       <Hero />
 

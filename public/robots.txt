@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Sitemap Location
+Sitemap: https://bodyandsoulwellness.in/sitemap.xml

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/theme-context";
+import Script from "next/script";
+import CanonicalTag from "@/components/layout/CanonicalTag";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -31,6 +33,9 @@ export const metadata: Metadata = {
     description: "Realign your mind, body, and spirit in our modern luxury energy healing sanctuary.",
     type: "website",
   },
+  verification: {
+    google: "TATLUUF7a6p1MckeFrVWt5Be1CaKcRvKf9nLlwvqsmQ",
+  },
 };
 
 export default function RootLayout({
@@ -45,7 +50,23 @@ export default function RootLayout({
       style={{ colorScheme: "light" }}
       data-scroll-behavior="smooth"
     >
+      <head>
+        <CanonicalTag />
+      </head>
       <body className="min-h-full flex flex-col font-sans selection:bg-purple-200/30 selection:text-purple-100">
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2XLRJH1K16"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2XLRJH1K16');
+          `}
+        </Script>
         <ThemeProvider>
           {children}
         </ThemeProvider>
@@ -53,3 +74,4 @@ export default function RootLayout({
     </html>
   );
 }
+
