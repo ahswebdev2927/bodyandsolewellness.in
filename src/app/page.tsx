@@ -14,7 +14,7 @@ import { CTA } from "@/components/sections/home/cta";
 
 export default function Home() {
   return (
-    <PageWrapper>
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -51,8 +51,9 @@ export default function Home() {
           })
         }}
       />
-      {/* 1. Full Screen Hero Section */}
-      <Hero />
+      <PageWrapper>
+        {/* 1. Full Screen Hero Section */}
+        <Hero />
 
       {/* 1.5 Diet Programs Preview */}
       <DietPreview />
@@ -85,5 +86,6 @@ export default function Home() {
       {/* 11. Large CTA Banner */}
       <CTA />
     </PageWrapper>
+    </>
   );
 }

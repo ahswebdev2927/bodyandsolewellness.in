@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/theme-context";
-import Script from "next/script";
 import CanonicalTag from "@/components/layout/CanonicalTag";
 
 const cormorant = Cormorant_Garamond({
@@ -52,21 +51,20 @@ export default function RootLayout({
     >
       <head>
         <CanonicalTag />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XLRJH1K16"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2XLRJH1K16');
+            `
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col font-sans selection:bg-purple-200/30 selection:text-purple-100">
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-2XLRJH1K16"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-2XLRJH1K16');
-          `}
-        </Script>
         <ThemeProvider>
           {children}
         </ThemeProvider>
