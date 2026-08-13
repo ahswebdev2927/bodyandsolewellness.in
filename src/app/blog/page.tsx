@@ -11,6 +11,20 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
+    id: "distance-reiki-healing-benefits-services",
+    title: "Distance Reiki Healing: Benefits, Services Offered",
+    subtitle: "Discover how remote energy sessions dissolve stress, restore harmony, and explore specialized healing modalities from anywhere.",
+    category: "Reiki & Energy Healing",
+    readTime: "6 min read",
+    date: "August 13, 2026",
+    author: "Body & Soul Wellness",
+    image: "/devine-imgs/reik_v2.png",
+    featured: true,
+    excerpt: "In our fast-paced daily life, stress and emotional burnout have become common. Distance Reiki Healing provides a flexible, gentle practice to experience deep relaxation and energetic harmony anywhere in the world.",
+    tags: ["Distance Reiki", "Key Benefits", "Who Can Benefit", "Specialized Services"],
+    slug: "/blog/distance-reiki-healing-benefits-services",
+  },
+  {
     id: "reiki-distance-healing",
     title: "Reiki Distance Healing: Experience Relaxation and Energy Balance from Anywhere",
     subtitle: "Discover how 45-minute remote energy sessions dissolve stress, emotional pressure, and support natural recovery without leaving home.",
@@ -19,7 +33,7 @@ const blogPosts = [
     date: "August 3, 2026",
     author: "Body & Soul Wellness",
     image: "/devine-imgs/reiki-blog-hero.png",
-    featured: true,
+    featured: false,
     excerpt: "In today’s fast-paced world, stress, emotional pressure, and mental fatigue can affect overall well-being. Reiki Distance Healing offers a gentle and convenient way to experience relaxation and energetic balance without being physically present.",
     tags: ["Reiki Distance Healing", "Reiki Session", "Natural Recovery", "Emotional Pressure"],
     slug: "/blog/reiki-distance-healing",
@@ -36,7 +50,7 @@ const blogPosts = [
     featured: false,
     excerpt: "Explore how daily 45-minute Karmic Reiki sessions help clear deep-rooted soul contracts and release repetitive life obstacles.",
     tags: ["Karmic Reiki", "Energy Healing", "Soul Contracts"],
-    slug: "/blog/reiki-distance-healing",
+    slug: "/blog/distance-reiki-healing-benefits-services",
   },
   {
     id: "violet-flame-transmutation",
@@ -50,7 +64,7 @@ const blogPosts = [
     featured: false,
     excerpt: "Learn how the sacred Violet Flame technique transmutes stagnant emotional heaviness and restores your energetic aura.",
     tags: ["Violet Flame", "Emotional Clarity", "Aura Cleansing"],
-    slug: "/blog/reiki-distance-healing",
+    slug: "/blog/distance-reiki-healing-benefits-services",
   },
 ];
 
@@ -192,22 +206,16 @@ export default function BlogIndexPage() {
                       Key Topics:
                     </span>
                     <div className="flex flex-wrap gap-2">
-                      <Link href="/services#reiki" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
-                        Reiki Distance Healing
-                        <ExternalLink className="w-3 h-3 ml-0.5" />
-                      </Link>
-                      <Link href="/services#reiki" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
-                        Reiki Session
-                        <ExternalLink className="w-3 h-3 ml-0.5" />
-                      </Link>
-                      <Link href="/diet" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
-                        Natural Recovery
-                        <ExternalLink className="w-3 h-3 ml-0.5" />
-                      </Link>
-                      <Link href="/services#karmic" className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium">
-                        Emotional Pressure
-                        <ExternalLink className="w-3 h-3 ml-0.5" />
-                      </Link>
+                      {featuredPost.tags.map((tag) => (
+                        <Link
+                          key={tag}
+                          href={featuredPost.slug}
+                          className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-300 text-xs hover:bg-purple-500/20 transition-colors font-medium"
+                        >
+                          {tag}
+                          <ExternalLink className="w-3 h-3 ml-0.5" />
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>
