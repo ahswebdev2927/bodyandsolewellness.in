@@ -227,8 +227,8 @@ export function Hero() {
                   <h4 className="text-sm font-serif font-bold text-foreground leading-snug">
                     Master Himabindu
                   </h4>
-                  <p className="text-[11px] text-neutral-500 dark:text-neutral-400 font-sans">
-                    Reiki Grand Master Facilitator
+                  <p className="text-[11px] text-neutral-500 dark:text-neutral-400 font-sans leading-tight">
+                    Reiki Grand Master &amp; Melchizedek Healing Facilitator
                   </p>
                 </div>
               </div>
