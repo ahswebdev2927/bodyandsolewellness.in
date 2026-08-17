@@ -111,74 +111,74 @@ const testimonialsList: Testimonial[] = [
     service: "Melchizedek Method"
   },
   {
-    name: "Deepika Sharma",
+    name: "Bhavani Chowdary",
     role: "Client",
     rating: 4.9,
     text: "The Weight Loss diet plan helped me lose 8 kgs in 3 months sustainably without feeling starved or exhausted. Optimizing my metabolism and portion sizing gave me lasting energy all day long!",
-    initials: "DS",
+    initials: "BC",
     category: "Diet",
     service: "Weight Loss",
     location: "Hyderabad, Telangana"
   },
   {
-    name: "Kiran Varma",
+    name: "Chaitanya Varma",
     role: "Client",
     rating: 4.8,
     text: "Struggled with being underweight and fatigued for years. The Weight Gain program focused on clean whole foods, proteins, and healthy fats, helping me gain 6 kgs of healthy muscle mass with renewed strength.",
-    initials: "KV",
+    initials: "CV",
     category: "Diet",
     service: "Weight Gain",
-    location: "Secunderabad, India"
+    location: "Secunderabad, Telangana"
   },
   {
-    name: "Suresh Nambiar",
+    name: "Satyanarayana Raju",
     role: "Client",
     rating: 4.9,
     text: "Following my heart health checkup, the Cardiovascular Diseases nutrition plan rich in omega-3s and antioxidants helped normalize my blood pressure and cholesterol. My physician was deeply impressed.",
-    initials: "SN",
+    initials: "SR",
     category: "Diet",
     service: "Cardiovascular Diseases",
-    location: "Kochi, Kerala"
+    location: "Vijayawada, Andhra Pradesh"
   },
   {
-    name: "Pooja Hegde",
+    name: "Padmaja Reddy",
     role: "Client",
     rating: 4.8,
     text: "Living with hypothyroidism left me with constant brain fog and a sluggish metabolism. The selenium and mineral-rich dietary protocol restored my thyroid balance and vitality within weeks.",
-    initials: "PH",
+    initials: "PR",
     category: "Diet",
     service: "Hypothyroidism",
     location: "Hyderabad, Telangana"
   },
   {
-    name: "Swathi Ananth",
+    name: "Swathi Kilaru",
     role: "Expecting Mother",
     rating: 5.0,
     text: "The Pre-natal diet plan ensured optimal nourishment for both me and my baby. The folic acid and nutrient-dense meal guidance kept my energy steady and eased my pregnancy journey completely.",
-    initials: "SA",
+    initials: "SK",
     category: "Diet",
     service: "Pre-natal",
-    location: "Bangalore, Karnataka"
+    location: "Guntur, Andhra Pradesh"
   },
   {
-    name: "Meera Krishnan",
+    name: "Mounika Reddy",
     role: "New Mother",
     rating: 4.9,
     text: "Postpartum recovery felt overwhelming until I started the Post-natal meal plan. It accelerated my tissue repair, balanced my hormones, and gave me the vital strength needed to care for my newborn.",
-    initials: "MK",
+    initials: "MR",
     category: "Diet",
     service: "Post-natal",
-    location: "Chennai, Tamil Nadu"
+    location: "Tirupati, Andhra Pradesh"
   },
   {
-    name: "Divya Bharathi",
+    name: "Divya Tejaswini",
     role: "Nursing Mother",
     rating: 5.0,
     text: "The galactagogue-rich Lactation diet increased my breast milk supply naturally within days while keeping me well-hydrated and energized. A true blessing for nursing mothers.",
-    initials: "DB",
+    initials: "DT",
     category: "Diet",
     service: "Lactation",
-    location: "Hyderabad, India"
+    location: "Warangal, Telangana"
   },
   {
     name: "Arjun Reddy",
@@ -191,7 +191,7 @@ const testimonialsList: Testimonial[] = [
     location: "Hyderabad, Telangana"
   },
   {
-    name: "Venkat Rao",
+    name: "Venkateswara Rao",
     role: "Client",
     rating: 4.9,
     text: "My HbA1c dropped from 8.2 to 6.4 following the customized glycemic-balanced Diabetes meal schedule. The dietitians taught me smart carbohydrate balancing without eliminating traditional foods.",
@@ -201,14 +201,14 @@ const testimonialsList: Testimonial[] = [
     location: "Visakhapatnam, Andhra Pradesh"
   },
   {
-    name: "Kavya Murthy",
+    name: "Kavya Sri Chowdary",
     role: "Client",
     rating: 4.8,
     text: "Managing PMOS and hormonal imbalance was difficult with irregular cycles and stubborn weight. The endocrine-supportive diet regulated my cycles naturally in 4 months and significantly reduced internal inflammation.",
-    initials: "KM",
+    initials: "KC",
     category: "Diet",
     service: "PMOS",
-    location: "Bangalore, Karnataka"
+    location: "Rajahmundry, Andhra Pradesh"
   },
   {
     name: "Ravi Teja E",
