@@ -11,6 +11,20 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
+    id: "reiki-healing-benefits-services-wellbeing",
+    title: "Reiki Healing: Benefits, Services and How It Can Support Your Well-Being",
+    subtitle: "Discover how gentle energy sessions nurture relaxation, emotional harmony, and inner peace—whether in person or remotely.",
+    category: "Reiki & Energy Healing",
+    readTime: "5 min read",
+    date: "August 31, 2026",
+    author: "Body & Soul Wellness",
+    image: "/devine-imgs/reiki-distance-healing_blog_Aug_31.webp",
+    featured: true,
+    excerpt: "Reiki healing is a gentle wellness practice that focuses on relaxation, emotional balance, and inner peace. Learn about its key benefits, available services, and why distance sessions can support your well-being.",
+    tags: ["Reiki Healing", "Reiki Sessions", "Wellness", "Distance Reiki"],
+    slug: "/blog/reiki-healing-benefits-services-wellbeing",
+  },
+  {
     id: "distance-reiki-healing-benefits-services",
     title: "Distance Reiki Healing: Benefits, Services Offered",
     subtitle: "Discover how remote energy sessions dissolve stress, restore harmony, and explore specialized healing modalities from anywhere.",
@@ -19,7 +33,7 @@ const blogPosts = [
     date: "August 13, 2026",
     author: "Body & Soul Wellness",
     image: "/devine-imgs/reik_v2.png",
-    featured: true,
+    featured: false,
     excerpt: "In our fast-paced daily life, stress and emotional burnout have become common. Distance Reiki Healing provides a flexible, gentle practice to experience deep relaxation and energetic harmony anywhere in the world.",
     tags: ["Distance Reiki", "Key Benefits", "Who Can Benefit", "Specialized Services"],
     slug: "/blog/distance-reiki-healing-benefits-services",
