@@ -141,7 +141,7 @@ export default function MelchizedekHealingBlogPage() {
               "dateModified": "2026-09-16",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://bodyandsoulwellness.in/blog/what-is-melchizedek-healing-benefits-process-distance-healing"
+                "@id": "https://bodyandsoulwellness.in/blog/melchizedek-healing-guide"
               }
             })
           }}

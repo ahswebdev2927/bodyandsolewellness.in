@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
-    id: "what-is-melchizedek-healing-benefits-process-distance-healing",
+    id: "melchizedek-healing-guide",
     title: "What Is Melchizedek Healing? Benefits, Process & Distance Healing",
     subtitle: "A spiritual and energy-based wellness practice for people interested in inner awareness, sacred geometry, and holistic well-being.",
     category: "Melchizedek Healing",
@@ -22,7 +22,7 @@ const blogPosts = [
     featured: true,
     excerpt: "Explore Melchizedek Healing at Body & Soul Wellness—incorporating sacred geometry, Merkaba, cosmic grids, and remote 45-minute distance healing sessions.",
     tags: ["Melchizedek Healing", "Sacred Geometry", "Merkaba", "Distance Healing"],
-    slug: "/blog/what-is-melchizedek-healing-benefits-process-distance-healing",
+    slug: "/blog/melchizedek-healing-guide",
   },
   {
     id: "reiki-healing-benefits-services-wellbeing",
