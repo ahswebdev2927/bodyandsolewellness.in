@@ -11,6 +11,20 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
+    id: "what-is-melchizedek-healing-benefits-process-distance-healing",
+    title: "What Is Melchizedek Healing? Benefits, Process & Distance Healing",
+    subtitle: "A spiritual and energy-based wellness practice for people interested in inner awareness, sacred geometry, and holistic well-being.",
+    category: "Melchizedek Healing",
+    readTime: "5 min read",
+    date: "September 16, 2026",
+    author: "Body & Soul Wellness",
+    image: "/devine-imgs/melc_v2.png",
+    featured: true,
+    excerpt: "Explore Melchizedek Healing at Body & Soul Wellness—incorporating sacred geometry, Merkaba, cosmic grids, and remote 45-minute distance healing sessions.",
+    tags: ["Melchizedek Healing", "Sacred Geometry", "Merkaba", "Distance Healing"],
+    slug: "/blog/what-is-melchizedek-healing-benefits-process-distance-healing",
+  },
+  {
     id: "reiki-healing-benefits-services-wellbeing",
     title: "Reiki Healing: Benefits, Services and How It Can Support Your Well-Being",
     subtitle: "Discover how gentle energy sessions nurture relaxation, emotional harmony, and inner peace—whether in person or remotely.",
@@ -19,7 +33,7 @@ const blogPosts = [
     date: "August 31, 2026",
     author: "Body & Soul Wellness",
     image: "/devine-imgs/reiki-distance-healing_blog_Aug_31.webp",
-    featured: true,
+    featured: false,
     excerpt: "Reiki healing is a gentle wellness practice that focuses on relaxation, emotional balance, and inner peace. Learn about its key benefits, available services, and why distance sessions can support your well-being.",
     tags: ["Reiki Healing", "Reiki Sessions", "Wellness", "Distance Reiki"],
     slug: "/blog/reiki-healing-benefits-services-wellbeing",
@@ -86,7 +100,7 @@ export default function BlogIndexPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Reiki & Energy Healing", "Karmic Healing", "Violet Flame"];
+  const categories = ["All", "Reiki & Energy Healing", "Melchizedek Healing", "Karmic Healing", "Violet Flame"];
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesCategory = selectedCategory === "All" || post.category === selectedCategory;
