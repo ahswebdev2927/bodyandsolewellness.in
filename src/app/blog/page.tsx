@@ -11,6 +11,20 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
+    id: "twin-flame-healing-guide",
+    title: "Twin Flame Healing: Spiritual Support for Emotional Balance & Union",
+    subtitle: "Release emotional blocks, karmic baggage, and limiting patterns to foster inner growth, clarity, and alignment toward union.",
+    category: "Twin Flame Healing",
+    readTime: "5 min read",
+    date: "October 7, 2026",
+    author: "Body & Soul Wellness",
+    image: "/devine-imgs/twin_v2.png",
+    featured: true,
+    excerpt: "Twin Flame Healing is designed to release emotional blocks, clear karmic baggage, and navigate runner-chaser dynamics for spiritual alignment and sacred union.",
+    tags: ["Twin Flame Healing", "Soul Union", "Karmic Cleansing", "Emotional Healing"],
+    slug: "/blog/twin-flame-healing-guide",
+  },
+  {
     id: "melchizedek-healing-guide",
     title: "What Is Melchizedek Healing? Benefits, Process & Distance Healing",
     subtitle: "A spiritual and energy-based wellness practice for people interested in inner awareness, sacred geometry, and holistic well-being.",
@@ -19,7 +33,7 @@ const blogPosts = [
     date: "September 16, 2026",
     author: "Body & Soul Wellness",
     image: "/devine-imgs/melc_v2.png",
-    featured: true,
+    featured: false,
     excerpt: "Explore Melchizedek Healing at Body & Soul Wellness—incorporating sacred geometry, Merkaba, cosmic grids, and remote 45-minute distance healing sessions.",
     tags: ["Melchizedek Healing", "Sacred Geometry", "Merkaba", "Distance Healing"],
     slug: "/blog/melchizedek-healing-guide",
@@ -100,7 +114,7 @@ export default function BlogIndexPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Reiki & Energy Healing", "Melchizedek Healing", "Karmic Healing", "Violet Flame"];
+  const categories = ["All", "Reiki & Energy Healing", "Twin Flame Healing", "Melchizedek Healing", "Karmic Healing", "Violet Flame"];
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesCategory = selectedCategory === "All" || post.category === selectedCategory;
