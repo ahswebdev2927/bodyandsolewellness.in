@@ -11,6 +11,20 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
+    id: "money-reiki-healing-guide",
+    title: "Money Reiki Healing at Body & Soul Wellness: Release Blocks & Welcome Abundance",
+    subtitle: "Release limiting money beliefs, clear energetic blocks, and develop a positive abundance mindset.",
+    category: "Money Reiki Healing",
+    readTime: "5 min read",
+    date: "October 26, 2026",
+    author: "Body & Soul Wellness",
+    image: "/devine-imgs/money_v2.png",
+    featured: true,
+    excerpt: "Money Reiki Healing focuses on the Spiritual Energy of Money to clear financial karma, dissolve scarcity beliefs, and foster an abundance mindset through remote sessions.",
+    tags: ["Money Reiki", "Abundance Mindset", "Financial Karma", "Energy Healing"],
+    slug: "/blog/money-reiki-healing-guide",
+  },
+  {
     id: "twin-flame-healing-guide",
     title: "Twin Flame Healing: Spiritual Support for Emotional Balance & Union",
     subtitle: "Release emotional blocks, karmic baggage, and limiting patterns to foster inner growth, clarity, and alignment toward union.",
@@ -19,7 +33,7 @@ const blogPosts = [
     date: "October 7, 2026",
     author: "Body & Soul Wellness",
     image: "/devine-imgs/twin_v2.png",
-    featured: true,
+    featured: false,
     excerpt: "Twin Flame Healing is designed to release emotional blocks, clear karmic baggage, and navigate runner-chaser dynamics for spiritual alignment and sacred union.",
     tags: ["Twin Flame Healing", "Soul Union", "Karmic Cleansing", "Emotional Healing"],
     slug: "/blog/twin-flame-healing-guide",
@@ -114,7 +128,7 @@ export default function BlogIndexPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Reiki & Energy Healing", "Twin Flame Healing", "Melchizedek Healing", "Karmic Healing", "Violet Flame"];
+  const categories = ["All", "Money Reiki Healing", "Reiki & Energy Healing", "Twin Flame Healing", "Melchizedek Healing", "Karmic Healing", "Violet Flame"];
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesCategory = selectedCategory === "All" || post.category === selectedCategory;
