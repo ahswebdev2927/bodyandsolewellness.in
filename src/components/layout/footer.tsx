@@ -153,7 +153,7 @@ export function Footer() {
           </div>
 
           <p className="text-xs text-neutral-400 dark:text-neutral-500 font-sans tracking-wide">
-            &copy; {new Date().getFullYear()} Wellness & Peace. All rights reserved.
+            &copy; {new Date().getFullYear()} Wellness & Peace. All rights reserved AHS.
           </p>
         </div>
       </div>
